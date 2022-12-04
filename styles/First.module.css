@@ -1,0 +1,40 @@
+.first_page_background{
+   height: 100%;
+   position: absolute;
+   top: 0px;
+   background-image: url("../public/images/page_1/firstpage_backgound.png");
+   width: 100%;
+   background-size: 100% 100%;
+}
+
+.top_left_image{
+   margin-top: 40px;
+   margin-left: 26px;
+   transition: .3s;
+}
+
+.first_page_background h1{
+   font-size: 3.5rem;
+   font-weight: bold;
+
+}
+.first_page_background h4{
+   font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+   .top_left_image{
+      margin-top: 0px;
+      margin-left: 0px;
+      width: 140px;
+      height: 140px;
+   }
+   .first_page_background h1{
+      font-size: 3rem;
+      font-weight: bold;
+
+   }
+   .first_page_background h4{
+      font-size: 1.5rem;
+   }
+}
