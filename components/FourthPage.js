@@ -1,7 +1,4 @@
 import React from 'react';
-import {Container  , Row , Col} from "react-bootstrap";
-import Image from "next/image";
-import PageRight from "../public/images/page_4/page_4_new.png";
 import styles from '../styles/Fourth.module.css';
 
 function FourthPage(props) {

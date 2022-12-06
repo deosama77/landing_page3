@@ -6,7 +6,7 @@
 }
 .container{
   width:100%;
-  height: 100vh;
+  height: auto;
   min-height: 560px;
   position: relative;
   top: 0px;
@@ -15,23 +15,26 @@
 }
 
 
-@media only screen and (max-width: 992px) {
-  .container_third{
-    min-height: 830px;
-  }
-  .container-fifth{
-    min-height: 900px;
-  }
-}
 
-@media only screen and (max-width: 768px) {
-  .container_third{
-   min-height: 1100px;
-  }
-  .container_fifth{
-    min-height: 1000px;
-  }
-}
+/*@media only screen and (max-width: 992px) {*/
+/*  .container_third{*/
+/*    min-height: 830px;*/
+/*  }*/
+/*  .container-fifth{*/
+/*    min-height: 880px;*/
+/*  }*/
+/*}*/
+
+/*@media only screen and (max-width: 768px) {*/
+/*  .container_third{*/
+/*   min-height: 1100px;*/
+/*  }*/
+/*  .container_fifth{*/
+/*    min-height: 880px;*/
+/*  }*/
+
+/*}*/
+
 
 
 

@@ -5,6 +5,9 @@ import SecondPage from "../components/SecondPage";
 import ThirdPage from "../components/ThirdPage";
 import FourthPage from "../components/FourthPage";
 import FifthPage from "../components/FifthPage";
+import { Suspense } from 'react';
+import LoadingPage from "../components/LoadingPage";
+import SixthPage from "../components/SixthPage";
 
 export default function Home() {
   return (
@@ -15,21 +18,27 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main >
-          <div className={styles.container}>
-              <FirstPage></FirstPage>
-          </div>
-          <div  className={styles.container}>
-              <SecondPage></SecondPage>
-          </div>
-          <div className={styles.container +' '+styles.container_third}>
-              <ThirdPage></ThirdPage>
-          </div>
-          <div className={styles.container}>
-              <FourthPage></FourthPage>
-          </div>
-          <div className={styles.container +' '+styles.container_fifth}>
-              <FifthPage></FifthPage>
-          </div>
+         <Suspense fallback={<LoadingPage></LoadingPage>}>
+             <div className={styles.container}>
+                 <FirstPage></FirstPage>
+             </div>
+             <div  className={styles.container}>
+                 <SecondPage></SecondPage>
+             </div>
+             <div className={styles.container +' '+styles.container_third}>
+                 <ThirdPage></ThirdPage>
+             </div>
+             <div className={styles.container}>
+                 <FourthPage></FourthPage>
+             </div>
+             <div className={styles.container +' '+styles.container_fifth}>
+                 <FifthPage></FifthPage>
+             </div>
+             <div className={styles.container+' '+styles.container_sixth}>
+                 <SixthPage></SixthPage>
+             </div>
+         </Suspense>
+
       </main>
         <footer>
             <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossOrigin={+true}></script>
