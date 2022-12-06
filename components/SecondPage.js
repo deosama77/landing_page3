@@ -9,7 +9,7 @@ function SecondPage(props) {
         <>
             <div className={styles.left_image_background}></div>
             <div className={styles.right_image_background}></div>
-            <div className={styles.card_sense}>
+            <div className={styles.card_sense +' border border-3 border-warning rounded-5'}>
                     <h4 className={'text-center w-100'}>SENSE EMBROIDERY</h4>
               <div className={'d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-start w-100'}>
                   <Image src={Icon1} alt={"icon 1"} width={120}

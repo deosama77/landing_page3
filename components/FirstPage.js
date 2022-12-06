@@ -11,14 +11,12 @@ function FirstPage(props) {
     return (
             <div className={styles.first_page_background}>
                  <Container fluid={+true}>
-                     <Row className="justify-content-lg-start
-                     justify-content-xl-start
-                     justify-content-xxl-start
-                     align-items-start
-                      justify-content-center">
-                     <Col xs={12} md={4} lg={4}><Image src={TopLeftImage}
+                     <Row className="justify-content-md-start
+                                    align-items-md-start
+                                     justify-content-center align-items-center">
+                     <Col xs={4}><Image src={TopLeftImage}
                                className={styles.top_left_image}
-                               alt={"first imageg"}
+                               alt={"first picture"}
                                width={180}
                                height={180}
                    ></Image></Col>
