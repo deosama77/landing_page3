@@ -33,6 +33,23 @@
 @media only screen and (min-width: 1200px) {
     .image_bottom{
         z-index: 0;
+        right: 3px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .image_bottom{
+        right: 7%;
+    }
+}
+@media only screen and (min-width: 1800px) {
+    .image_bottom{
+        right: 12%;
+    }
+}
+@media only screen and (min-width: 2000px) {
+    .image_bottom{
+        right: 16%;
     }
 }
 

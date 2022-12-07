@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from '../styles/Sixth.module.css'
 import {Container , Col, Row} from "react-bootstrap";
 import RightCut from '../public/images/page_6/right_cut.png';
 import LeftCut from '../public/images/page_6/left_cut.png';
@@ -15,11 +14,11 @@ function SixthPage(props) {
                 </Col>
             </Row>
             <Row className={'gap-md-1 gap-xl-2 justify-content-center align-items-center py-md-1 py-xl-2'}>
-                <Col xs={10} md={6} xl={5}>
+                <Col xs={10} md={6} xl={5} className={'overflow-auto'}>
                     <Image src={LeftCut} alt={"left cut"}
                            width={420} height={400}></Image>
                 </Col>
-                <Col xs={10} md={6} xl={5}>
+                <Col xs={10} md={6} xl={5} className={'overflow-auto'}>
                     <Image src={RightCut} alt={"right cut"}
                            width={420} height={400}></Image>
                 </Col>
