@@ -48,7 +48,7 @@ function FirstPage(props) {
                              <Animate.ScaleIn>
                              <div className={'d-flex flex-column flex-md-row justify-content-center align-items-stretch'}>
 
-                                 <div className={'px-2 py-2 border rounded mx-1 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
+                                 <div className={'px-2 py-2 mx-md-2  border rounded mx-1 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
                                      <Image src={Icone2} alt={"icone 2"}
                                             width={40} height={40}
                                             className={'rounded-circle mx-2'}
@@ -56,19 +56,20 @@ function FirstPage(props) {
                                      <h4>自然伪妆感</h4>
                                  </div>
 
-
-                                 <div className={'px-2 py-2 border  rounded mx-1 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
+                                 <div className={'px-2 py-2 mx-md-2  border  rounded mx-1 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
                                      <Image src={Icone3} alt={"icone 2"}
                                             width={40} height={40}
                                             className={'rounded-circle mx-2'}
                                      ></Image> <h4>科技修饰脸型</h4>
                                  </div>
-                                 <div className={'px-2 py-2 border  rounded mx-1 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
+
+                                 <div className={'px-2 py-2 mx-md-2  border  rounded mx-1 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
                                      <Image src={Icone4} alt={"icone 2"}
                                             width={40} height={40}
                                             className={'rounded-circle mx-2'}
                                      ></Image> <h4>无疼过程</h4>
                                  </div>
+
                              </div>
                              </Animate.ScaleIn>
                          </Col>

@@ -23,14 +23,19 @@ function SeventhPage(props) {
     return (
         <>
        <Container className={'border border-3 rounded-5 border-warning'}>
+
            <Row className={styles.row_icons}>
                <Col xs={2}>
+
                    <div>
+
                        <Image src={LikeIcon} alt={"like icon"}
                               width={150} height={150}
                               className={styles.like_1}
                        ></Image>
+
                    </div>
+
                </Col>
                <Col xs={2}>
                    <div>
@@ -56,8 +61,8 @@ function SeventhPage(props) {
                        ></Image>
                    </div>
                </Col>
-
            </Row>
+
            <Row className={styles.row_header}>
                <Col className={'d-flex flex-row justify-content-center align-items-center  position-relative '+styles.header_title}>
                <div className={'h2 text-center py-3'}>述評</div>

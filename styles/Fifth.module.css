@@ -7,8 +7,15 @@
 
 
 .header_card{
-    letter-spacing: .7rem;
+    letter-spacing: .8rem;
+    font-weight: 250;
+
+}
+
+.app{
+    letter-spacing: normal;
     font-weight: normal;
+    color: black;
 }
 .slash_number{
     font-size: 3rem;
@@ -16,7 +23,6 @@
     top:-24px;
     right: 10px;
     color: black;
-
 }
 
 .slash{
@@ -24,6 +30,7 @@
     bottom: -23px;
     right: -11px;
 }
+
 
 @media only screen and (max-width: 850px) {
     .image_bottom{

@@ -2,7 +2,7 @@ import React from 'react';
 import {Container , Row,Col} from "react-bootstrap";
 import Image from "next/image";
 import Icons_13 from '../public/images/pge_9/icons_13_cut.png';
-import Icons_14 from '../public/images/pge_9/icons_14.PNG';
+import Icons_14 from '../public/images/pge_9/icons_14.png';
 import Icons_15 from '../public/images/pge_9/icons_15.png';
 import Icons_16 from '../public/images/pge_9/icons_16.png';
 import Icons_17 from '../public/images/pge_9/icons_17.png';
@@ -22,10 +22,11 @@ function FooterPge(props) {
             </div>
         <Container>
             <Row>
-                <div className={'h1 text-center py-md-3'}>品牌承诺</div>
+                <div className={'h1 text-center py-md-3'} style={{fontSize:'3rem' ,
+                    letterSpacing:'.6rem'}}>品牌承诺</div>
             </Row>
             <Row>
-                <Col className={'py-2 bg-white bg-opacity-10 border border-3 border-warning rounded-5'}>
+                <Col className={'py-2 bg-white bg-opacity-50 border border-3 border-warning rounded-5 '}>
                     <Container>
                         <Row className={'py-md-3 py-2'}>
                             <Col xs={6} md={4} lg={3} className={'py-md-2 d-flex flex-column align-items-center'}>

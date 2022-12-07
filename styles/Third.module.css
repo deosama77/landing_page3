@@ -6,3 +6,15 @@
     height: 40px;
     color: #7a5506;
 }
+
+.header_card{
+    letter-spacing: .6rem;
+    font-size: 3rem;
+}
+
+@media screen and(max-width: 600px) {
+    .header_card{
+        letter-spacing: .4rem;
+        font-size: 2.5rem;
+    }
+}

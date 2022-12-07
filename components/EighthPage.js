@@ -2,6 +2,7 @@ import React from 'react';
 import {Container , Col,Row} from "react-bootstrap";
 import Image from "next/image";
 import ImageLeft from '../public/images/page_8/weChat.png';
+import styles from '../styles/Eighth.module.css';
 
 function EighthPage(props) {
     return (
@@ -14,8 +15,8 @@ function EighthPage(props) {
                 <Col xs={12} md={6} className={'py-5 mt-2 mt-md-5'}>
                    <Row className={'container pt-md-4'}>
                        <Col>
-                           <div className={'h1 text-center text-md-start'}>Sense Embroidery</div>
-                           <div className={'h1 text-center text-md-start'}>半永久定妆术</div>
+                           <div className={'h1 text-center text-md-start '+styles.snese_header}>Sense Embroidery</div>
+                           <div className={'h1 text-center text-md-start '+styles.header_ch}>半永久定妆术</div>
                            <div className={'h4 text-center text-md-start py-md-4'}>带你刷新审美认知行走在美学的最前沿。</div>
                            <div className={'pb-md-4'}>
                                <div className={'h4 text-center text-md-start'}>在未来的5年内与我们的纹绣师团队</div>

@@ -11,7 +11,7 @@ function ThirdPage(props) {
         <Container>
             <Row className={'py-2'}>
                 <Col className={'d-flex justify-content-center align-items-center w-100'}>
-                    <h4>你也有以下的烦恼吗？</h4>
+                    <h2>你也有以下的烦恼吗？</h2>
                 </Col>
             </Row>
             <Row className={'my-2'}>
@@ -19,7 +19,7 @@ function ThirdPage(props) {
                      <div className={'border border-3 border-warning w-100 rounded-5'}>
                          <Container>
                              <Row className={'py-2'}>
-                                 <Col><div className={"h2 d-flex justify-content-center align-items-center w-100"}>80%颜值问题都能通过眉毛解决</div></Col>
+                                 <Col><div className={"h1 d-flex justify-content-center align-items-center w-100 "+style.header_card}>80%颜值问题都能通过眉毛解决</div></Col>
                              </Row>
                              <Row>
                                  <Col xs={12} md={4} lg={3} className={'d-flex flex-column justify-content-center align-items-center'}>
