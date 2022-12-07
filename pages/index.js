@@ -11,8 +11,13 @@ import SixthPage from "../components/SixthPage";
 import SeventhPage from "../components/SeventhPage";
 import EighthPage from "../components/EighthPage";
 import FooterPge from "../components/FooterPge";
+import {Animate, useElementOnScreen} from "../hooks/useElementOnScreen";
+import {useRef} from 'react'
 
 export default function Home() {
+    const firstAnimate=useRef();
+    useElementOnScreen(firstAnimate);
+
   return (
     <div>
       <Head>
@@ -22,33 +27,55 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
          <Suspense fallback={<LoadingPage></LoadingPage>}>
+             <Animate.FadeUp>
              <div className={styles.container}>
                  <FirstPage></FirstPage>
              </div>
+             </Animate.FadeUp>
+
+             <Animate.FadeUp>
              <div  className={styles.container}>
                  <SecondPage></SecondPage>
              </div>
+             </Animate.FadeUp>
+
+             <Animate.FadeUp>
              <div className={styles.container +' '+styles.container_third}>
                  <ThirdPage></ThirdPage>
              </div>
+              </Animate.FadeUp>
+             <Animate.FadeUp>
              <div className={styles.container}>
                  <FourthPage></FourthPage>
              </div>
+             </Animate.FadeUp>
+             <Animate.FadeUp>
              <div className={styles.container}>
                  <FifthPage></FifthPage>
              </div>
+             </Animate.FadeUp>
+
+             <Animate.FadeUp>
              <div className={styles.container}>
                  <SixthPage></SixthPage>
              </div>
+             </Animate.FadeUp>
+
+             <Animate.FadeUp>
              <div className={styles.container}>
                  <SeventhPage></SeventhPage>
              </div>
+             </Animate.FadeUp>
+             <Animate.FadeUp>
              <div className={styles.container}>
                  <EighthPage></EighthPage>
              </div>
+             </Animate.FadeUp>
+             <Animate.FadeUp>
              <div className={styles.container}>
                  <FooterPge></FooterPge>
              </div>
+             </Animate.FadeUp>
          </Suspense>
 
       </div>

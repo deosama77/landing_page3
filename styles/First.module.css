@@ -12,15 +12,35 @@
    margin-left: 26px;
    transition: .3s;
 }
+.logo{
+   top: 64%;
+   right: -1%;
+   z-index: 10;
 
-.first_page_background h1{
-   font-size: 3.5rem;
+}
+
+
+.header_top{
+   font-size: 3rem;
+   letter-spacing: 1rem;
+   color: black;
+   font-weight: normal;
+}
+.header_middle{
+   font-size: 5rem;
+   letter-spacing: 1rem;
+   color: black;
    font-weight: bold;
 
 }
-.first_page_background h4{
-   font-size: 2rem;
+.header_bottom{
+   font-size: 3rem;
+   letter-spacing: 1rem;
+   color: black;
+   font-weight: normal;
 }
+
+
 
 @media only screen and (max-width: 768px) {
    .top_left_image{
@@ -29,12 +49,23 @@
       width: 140px;
       height: 140px;
    }
-   .first_page_background h1{
-      font-size: 3rem;
-      font-weight: bold;
-
-   }
    .first_page_background h4{
       font-size: 1.5rem;
+   }
+
+
+   .header_top{
+      font-size: 2.5rem;
+      letter-spacing: .7rem;
+   }
+   .header_middle{
+      font-size: 4rem;
+      letter-spacing: .7rem;
+
+
+   }
+   .header_bottom{
+      font-size: 2.5rem;
+      letter-spacing: .7rem;
    }
 }

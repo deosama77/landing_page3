@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useRef} from 'react';
 import {Container , Row,Col} from "react-bootstrap";
 import Image_row1_col1 from '../public/images/page_7/row_1_col_1.png';
 import Image_row1_col2 from '../public/images/page_7/row_1_col_2.png';
@@ -13,8 +13,13 @@ import Image from 'next/image';
 import styles from'../styles/Seventh.module.css';
 
 import LikeIcon from '../public/images/page_7/Like_1.png'
-import LovIcon1 from '../public/images/page_7/Icons_love.png'
+import LovIcon1 from '../public/images/page_7/Icons_love.png';
+import {Animate, useElementOnScreen} from "../hooks/useElementOnScreen";
+
 function SeventhPage(props) {
+    const firstAnimate=useRef();
+    useElementOnScreen(firstAnimate);
+
     return (
         <>
        <Container className={'border border-3 rounded-5 border-warning'}>
@@ -59,33 +64,52 @@ function SeventhPage(props) {
                <Image src={Image_title} alt={"icons title"}
                width={200} height={100}></Image>
            </Col></Row>
+
            <Row className={'justify-content-center align-items-center'}>
+
                <Col  xl={4} lg={6} className={'my-1 m-lg-0 d-flex justify-content-center align-items-center'}>
+                   <Animate.ScaleIn>
                   <Image src={Image_row1_col1} alt={"image 1"}
                   width={320} height={230}></Image>
+                   </Animate.ScaleIn>
                </Col>
+
+
                <Col xl={4} lg={6} className={'my-1 m-lg-0 d-flex justify-content-center align-items-center'}>
+                   <Animate.ScaleIn>
                    <Image src={Image_row1_col2} alt={"image 1"}
                           width={300} height={180}></Image>
+                   </Animate.ScaleIn>
                </Col>
+
+
                <Col xl={4} lg={5} className={'my-1 m-lg-0 d-flex justify-content-center align-items-center'}>
+                   <Animate.ScaleIn>
                    <Image src={Image_row1_col3} alt={"image 1"}
                           width={300} height={180}></Image>
+                   </Animate.ScaleIn>
                </Col>
+
            </Row>
 
            <Row className={'justify-content-center align-items-center pb-2 pb-md-0 pt-3 '+styles.row_2}>
                <Col   lg={6} className={'my-1 m-lg-0 d-flex justify-content-center justify-content-lg-start align-items-center'}>
+                   <Animate.ScaleIn>
                    <Image src={Image_row2_col1} alt={"image 1"}
                           width={360} height={230}></Image>
+                  </Animate.ScaleIn>
                </Col>
                <Col  lg={6} className={'my-1 m-lg-0 d-flex justify-content-center justify-content-lg-start align-items-center position-relative '+styles.row2_col2}>
+                   <Animate.ScaleIn>
                    <Image src={Image_row2_col2} alt={"image 1"}
                           width={400} height={180}></Image>
+                   </Animate.ScaleIn>
                </Col>
                <Col  lg={6} className={'my-1 m-lg-0 d-flex justify-content-center justify-content-lg-start align-items-center position-relative '+styles.row2_col3}>
+                   <Animate.ScaleIn>
                    <Image src={Image_row2_col3} alt={"image 1"}
                           width={400} height={180}></Image>
+                   </Animate.ScaleIn>
                </Col>
            </Row>
        </Container>

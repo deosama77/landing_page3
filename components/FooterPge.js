@@ -56,7 +56,7 @@ function FooterPge(props) {
                                 <Image src={Icons_17} alt={"imge 13"}
                                        width={50} height={50}></Image>
                                 <div className={'h4'}>100% 天然</div>
-                                <div cassName={'h4'}>植物色料</div>
+                                <div className={'h4'}>植物色料</div>
                             </Col>
                             <Col xs={6}  md={4} lg={3}  className={'py-md-2 d-flex flex-column align-items-center'}>
                                 <Image src={Icons_18} alt={"imge 13"}
