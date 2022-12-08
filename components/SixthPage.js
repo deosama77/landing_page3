@@ -19,11 +19,11 @@ function SixthPage(props) {
             <Row className={'gap-md-1 gap-xl-2 justify-content-center align-items-center py-md-1 py-xl-2'}>
                 <Col xs={10} md={6} xl={5} className={'overflow-auto'}>
                     <Image src={LeftCut} alt={"left cut"}
-                           width={420} height={400}></Image>
+                           width={420} height={350}></Image>
                 </Col>
                 <Col xs={10} md={6} xl={5} className={'overflow-auto'}>
                     <Image src={RightCut} alt={"right cut"}
-                           width={420} height={400}></Image>
+                           width={420} height={350}></Image>
                 </Col>
             </Row>
             <div className={'d-flex align-items-start justify-content-center'}>

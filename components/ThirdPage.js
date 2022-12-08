@@ -5,10 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark , faCheck} from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image';
 import Wechat from '../public/images/page_3/wechat_img2.png';
-import ClickIcon from '../public/images/click_01_cut.png';
+import ClickIcon from '../public/images/buttons_01.png';
 
 function ThirdPage(props) {
     return (
+        <>
         <Container>
             <Row className={'py-2'}>
                 <Col className={'d-flex justify-content-center align-items-center w-100'}>
@@ -59,7 +60,7 @@ function ThirdPage(props) {
 
                                  <Col className={'w-100 d-inline-flex justify-content-center'}>
                                     <Image src={Wechat} alt={"picture"}
-                                    height={380} width={380}
+                                    height={400} width={400}
                                     ></Image>
                                  </Col>
 
@@ -90,17 +91,17 @@ function ThirdPage(props) {
                                          /></div>
                                  </Col>
                              </Row>
-                             <Row>
-                                 <div className={'d-flex align-items-start justify-content-center '+style.click_icon_container}>
-                                     <Image className={'fa-fade'}
-                                         src={ClickIcon} alt={"click icon"} width={270} height={70}></Image>
-                                 </div>
-                             </Row>
                          </Container>
                      </div>
                 </Col>
             </Row>
         </Container>
+            <div className={'d-flex align-items-start justify-content-center '+style.click_icon_container}>
+                <Image className={'fa-fade'}
+                       src={ClickIcon} alt={"click icon"} width={300} height={100}></Image>
+
+            </div>
+        </>
     );
 }
 

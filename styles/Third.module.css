@@ -1,7 +1,9 @@
 .click_icon_container{
-    position: relative;
-    bottom: -78px;
-    margin-bottom: 30px;
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    transform: translateX(-50%);
+
 }
 
 .check_icon{
