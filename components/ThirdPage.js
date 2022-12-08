@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark , faCheck} from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image';
 import Wechat from '../public/images/page_3/wechat_img2.png';
+import ClickIcon from '../public/images/click_01_cut.png';
 
 function ThirdPage(props) {
     return (
@@ -14,10 +15,10 @@ function ThirdPage(props) {
                     <h2>你也有以下的烦恼吗？</h2>
                 </Col>
             </Row>
-            <Row className={'my-2'}>
-                <Col className={'w-100'}>
+            <Row>
+                <Col className={'w-100 mb-5'}>
                      <div className={'border border-3 border-warning w-100 rounded-5'}>
-                         <Container>
+                         <Container >
                              <Row className={'py-2'}>
                                  <Col><div className={"h1 d-flex justify-content-center align-items-center w-100 "+style.header_card}>80%颜值问题都能通过眉毛解决</div></Col>
                              </Row>
@@ -28,6 +29,7 @@ function ThirdPage(props) {
                                                           width={25}
                                                           height={25}
                                                           opacity={.3}
+                                                          style={{fontSize:'2rem'}}
                                          />
                                          <span className={'h4 text-center'}>
                                              对原身眉形<br/>和眼型不满意</span>
@@ -38,6 +40,7 @@ function ThirdPage(props) {
                                                           width={25}
                                                           height={25}
                                                           opacity={.3}
+                                                          style={{fontSize:'2rem'}}
                                          />
                                          <span className={'h4 text-center'}>羡慕明星<br/> 立体五官</span>
                                      </div>
@@ -46,6 +49,7 @@ function ThirdPage(props) {
                                                           width={25}
                                                           height={25}
                                                           opacity={.3}
+                                                          style={{fontSize:'2rem'}}
                                          />
                                          <span className={'h4 text-center'}>对原身眉形<br/> 和眼型不满意</span>
                                      </div>
@@ -60,7 +64,7 @@ function ThirdPage(props) {
                                  </Col>
 
                                  <Col xs={12} md={12} lg={3} className={"d-flex flex-column justify-content-center"}>
-                                     <div className={'text-center py-2 border  rounded-5  my-2 position-relative'} style={{backgroundColor:'#f9f0f0'}}>
+                                     <div className={'text-center pb-2 pt-3 border  rounded-5  my-2 position-relative'} style={{backgroundColor:'#f9f0f0'}}>
                                          <div className={' h3 text-center'} >五官立体感</div>
                                          <FontAwesomeIcon icon={faCheck}
                                                           width={25}
@@ -68,7 +72,7 @@ function ThirdPage(props) {
                                                           opacity={.3}
                                                           className={style.check_icon}
                                          /></div>
-                                     <div className={'text-center py-2 mt-md-3 border  rounded-5  my-2 position-relative'} style={{backgroundColor:'#f9f0f0'}}>
+                                     <div className={'text-center pb-2 pt-3 mt-md-3 border  rounded-5  my-2 position-relative'} style={{backgroundColor:'#f9f0f0'}}>
                                          <div className={' h3 text-center'} >自然伪妆感</div>
                                          <FontAwesomeIcon icon={faCheck}
                                                           width={25}
@@ -76,8 +80,8 @@ function ThirdPage(props) {
                                                           opacity={.3}
                                                           className={style.check_icon}
                                          /></div>
-                                     <div className={'text-center py-2 mt-md-3 border  rounded-5  my-2 position-relative'} style={{backgroundColor:'#f9f0f0'}}>
-                                         <div className={' h3 text-center'} >素颜自由</div>
+                                     <div className={'text-center pb-2 pt-3  mt-md-3 border  rounded-5  mt-2 position-relative'} style={{backgroundColor:'#f9f0f0'}}>
+                                         <div className={'h3 text-center'} >素颜自由</div>
                                          <FontAwesomeIcon icon={faCheck}
                                                           width={25}
                                                           height={25}
@@ -85,6 +89,12 @@ function ThirdPage(props) {
                                                           className={style.check_icon}
                                          /></div>
                                  </Col>
+                             </Row>
+                             <Row>
+                                 <div className={'d-flex align-items-start justify-content-center '+style.click_icon_container}>
+                                     <Image className={'fa-fade'}
+                                         src={ClickIcon} alt={"click icon"} width={270} height={70}></Image>
+                                 </div>
                              </Row>
                          </Container>
                      </div>

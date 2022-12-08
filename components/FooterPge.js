@@ -9,8 +9,9 @@ import Icons_17 from '../public/images/pge_9/icons_17.png';
 import Icons_18 from '../public/images/pge_9/iconse_18.png';
 import Icons_19 from '../public/images/pge_9/icons_19.png';
 import Icons_20 from '../public/images/pge_9/icons_20.png';
+import ClickIcon from '../public/images/buttons_02.png';
+import ImageBackground from '../public/images/pge_9/weChate.jpg';
 
-import ImageBackground from '../public/images/pge_9/weChate.jpg'
 function FooterPge(props) {
     return (
         <>
@@ -84,7 +85,13 @@ function FooterPge(props) {
                 </Col>
             </Row>
             <Row>
-                <Col md={{span:8,offset:4}} className={' py-md-5 py-3 d-flex flex-column justify-content-center align-items-center'}>
+                <Col>
+                    <div className={'d-flex align-items-center justify-content-center'}>
+                        <Image className={'fa-fade'}
+                               src={ClickIcon} alt={"click icon"} width={450} height={150}></Image>
+                    </div>
+                </Col>
+                <Col  className={' py-md-5 py-3 d-flex flex-column justify-content-center align-items-center'}>
                     <div className={'h3'}>Sense Embroidery</div>
                     <div className={'h4'}>Petaling Jaya | Scott Garden | Penang</div>
                     <div className={'h5'}>+6014-807 3636 | +6018-259 3836 | +6014-878 3636</div>

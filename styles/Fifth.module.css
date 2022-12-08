@@ -1,3 +1,7 @@
+.click_icon{
+    position: relative;
+   bottom: 20px;
+}
 
 .image_bottom{
     bottom: -85px;

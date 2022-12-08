@@ -15,14 +15,14 @@ import styles from'../styles/Seventh.module.css';
 import LikeIcon from '../public/images/page_7/Like_1.png'
 import LovIcon1 from '../public/images/page_7/Icons_love.png';
 import {Animate, useElementOnScreen} from "../hooks/useElementOnScreen";
+import ClickIcon from '../public/images/click_01_cut.png';
 
 function SeventhPage(props) {
     const firstAnimate=useRef();
     useElementOnScreen(firstAnimate);
 
     return (
-        <>
-       <Container className={'border border-3 rounded-5 border-warning'}>
+       <Container className={'border border-3 rounded-5 border-warning pb-5'}>
 
            <Row className={styles.row_icons}>
                <Col xs={2}>
@@ -117,8 +117,11 @@ function SeventhPage(props) {
                    </Animate.ScaleIn>
                </Col>
            </Row>
+           <div className={'d-flex align-items-start justify-content-center '+styles.click_icon}>
+               <Image className={'fa-fade'}
+                      src={ClickIcon} alt={"click icon"} width={220} height={60}></Image>
+           </div>
        </Container>
-        </>
     );
 }
 

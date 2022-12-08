@@ -4,7 +4,7 @@ import ImageUp from '../public/images/page_5/wechat_image.png';
 import ImageBottom from "../public/images/page_5/wechat_bottom.png";
 import styles from '../styles/Fifth.module.css';
 import {Col,Row, Container} from "react-bootstrap";
-
+import ClickIcon from '../public/images/click_01_cut.png'
 function FifthPage(props) {
     return (
         <>
@@ -18,7 +18,7 @@ function FifthPage(props) {
         </div>
 
             <Container className={'position-relative'}>
-                <Row className={'py-3'}>
+                <Row className={'py-3 gap-2 d-flex justify-content-center w-100'}>
                     <Col xs={12} md={5}  className={'py-4 px-4  bg-white bg-opacity-50 border rounded-5 border-warning ' +
                         'd-flex flex-column align-items-center justify-content-md-center align-items-md-end'}>
                         <div className={'h1 text-end '+styles.header_card}>3年严苛训练</div>
@@ -40,7 +40,7 @@ function FifthPage(props) {
                                 <span >2</span><div className={styles.slash}>/</div></div>
                         </div>
                     </Col>
-                    <Col xs={12} md={{span:5,offset:1}}  className={'py-2 px-4 mt-2 mt-md-0  bg-white bg-opacity-50  border rounded-5 border-warning ' +
+                    <Col xs={12} md={5}  className={'py-4 px-4  mt-2 mt-md-0  bg-white bg-opacity-50  border rounded-5 border-warning ' +
                         'd-flex flex-column align-items-center justify-content-md-center align-items-md-start'}>
                         <div className={'h1 text-start '+styles.header_card}>独家研发</div>
                         <div className={'h1 text-start '+styles.header_card}>智能对称<strong className={styles.app}>APP</strong></div>
@@ -64,6 +64,12 @@ function FifthPage(props) {
 
                         </div>
                     </Col>
+                </Row>
+                <Row>
+                    <div className={'d-flex align-items-start justify-content-center '+styles.click_icon}>
+                        <Image className={'fa-fade'}
+                               src={ClickIcon} alt={"click icon"} width={220} height={65}></Image>
+                    </div>
                 </Row>
             </Container>
         </>

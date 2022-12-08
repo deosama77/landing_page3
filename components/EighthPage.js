@@ -3,6 +3,7 @@ import {Container , Col,Row} from "react-bootstrap";
 import Image from "next/image";
 import ImageLeft from '../public/images/page_8/weChat.png';
 import styles from '../styles/Eighth.module.css';
+import ClickIcon from '../public/images/click_01_cut.png';
 
 function EighthPage(props) {
     return (
@@ -26,6 +27,10 @@ function EighthPage(props) {
 
                            <div className={'h4 text-center text-md-start'}>Beautiful is confidence,<br/>
                                and confidence is even more beautiful.</div>
+                           <div className={'d-flex align-items-start justify-content-start pt-2'}>
+                               <Image className={'fa-fade'}
+                                      src={ClickIcon} alt={"click icon"} width={270} height={70}></Image>
+                           </div>
                        </Col>
                    </Row>
                 </Col>

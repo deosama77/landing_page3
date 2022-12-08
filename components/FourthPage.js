@@ -1,5 +1,8 @@
 import React from 'react';
 import styles from '../styles/Fourth.module.css';
+import style from "../styles/Third.module.css";
+import Image from "next/image";
+import ClickIcon from "../public/images/buttons_01.png";
 
 function FourthPage(props) {
     return (
@@ -8,6 +11,10 @@ function FourthPage(props) {
            <div className={styles.text_position}>
                <div className={'h1'}>独有鼻影技术</div>
                <div className={'h1'}>增强面部立体度</div>
+               <div className={'d-flex align-items-start justify-content-center'}>
+                   <Image className={'fa-fade'}
+                          src={ClickIcon} alt={"click icon"} width={350} height={110}></Image>
+               </div>
            </div>
            <div className={"py-2 px-2 border border-3 rounded-5 position-absolute "+styles.ex_up}>眉形包着眼睛的弧线</div>
            <div className={'py-2 px-5 border border-3 rounded-5 position-absolute '+styles.ex_down}>
