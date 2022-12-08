@@ -60,7 +60,7 @@ function ThirdPage(props) {
 
                                  <Col className={'w-100 d-inline-flex justify-content-center'}>
                                     <Image src={Wechat} alt={"picture"}
-                                    height={400} width={400}
+                                    height={420} width={500}
                                     ></Image>
                                  </Col>
 
