@@ -16,8 +16,9 @@
 }
 
 .header_card{
-    letter-spacing: .6rem;
-    font-size: 3rem;
+    letter-spacing: .3rem;
+    font-size: 2.4rem;
+
 }
 
 @media screen and(max-width: 600px) {
@@ -27,5 +28,20 @@
     }
     .click_icon{
         bottom: 30%;
+    }
+}
+.middleImage_vertical{
+    display: block;
+}
+.middleImage_horizontal{
+    display: none;
+    bottom: 100px;
+}
+@media only screen and (min-width: 769px) {
+    .middleImage_vertical{
+        display: none;
+    }
+    .middleImage_horizontal{
+        display: block;
     }
 }

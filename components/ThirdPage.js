@@ -90,6 +90,7 @@ function ThirdPage(props) {
                                                           className={style.check_icon}
                                          /></div>
                                  </Col>
+
                              </Row>
                          </Container>
                      </div>

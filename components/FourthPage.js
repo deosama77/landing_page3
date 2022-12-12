@@ -13,8 +13,8 @@ function FourthPage(props) {
                <div className={'h1'}>增强面部立体度</div>
                <div className={'d-flex align-items-start justify-content-center'}>
                    <Image className={'fa-fade'}
-                          src={ClickIcon} alt={"click icon"} width={220} height={90}
-                   style={{backgroundColor:'green'}}></Image>
+                          src={ClickIcon} alt={"click icon"}
+                          width={220} height={90}></Image>
                </div>
            </div>
            <div className={"py-2 px-2 border border-3 rounded-5 position-absolute "+styles.ex_up}>眉形包着眼睛的弧线</div>
