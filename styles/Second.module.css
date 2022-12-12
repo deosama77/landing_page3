@@ -18,9 +18,28 @@
     background-size: 100% 100%;
     background-position: right top;
 }
+@media only screen and (max-width: 600px) {
+    .right_image_background{
+        position: absolute;
+        height: 50vh;
+        width: 100%;
+        background-image: url("../public/images/page_2/right_image_vertical.png");
+        background-repeat: no-repeat;
 
+    }
+    .left_image_background{
+        height: 50vh;
+        width: 100%;
+        background-image: url("../public/images/page_2/left_image_veretical.png");
+        position: absolute;
+        background-repeat: no-repeat;
+        top:400px;
+    }
+
+}
 .card_sense{
-    background-color: rgb(255,255,255,.3);
+    background-color: rgb(255,255,255,.7);
+    z-index: 10;
     position: absolute;
     top: 50%;
     left:50%;
@@ -34,21 +53,48 @@
 .sense_em{
     font-weight: normal;
     letter-spacing: normal;
+    font-family: "Times New Roman", Times, serif;
 }
 
 @media only screen and (max-width:600px ) {
     .card_sense{
-        width: 80%;
+        width: 90%;
     }
 }
 
 @media only screen and (max-width:770px ) and (min-width: 601px){
     .card_sense{
-        width: 60%;
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 771px){
+    .card_sense{
+        width: 70%;
+    }
+    .top_image{
+        display: none;
+    }
+    .bottom_image{
+        display: none;
     }
 }
 
+.left_image{
+    width: 50%;
+    height: 100vh;
+}
+.right_image{
+    width: 50%;
+    height: 100vh;
+}
 
 
-
+@media only screen and (max-width:  770px) {
+    .left_image{
+        display: none;
+    }
+    .right_image{
+        display: none;
+    }
+}
 

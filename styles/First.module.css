@@ -1,10 +1,17 @@
 .first_page_background{
-   height: 100%;
-   position: absolute;
+   position: relative;
    top: 0px;
    background-image: url("../public/images/page_1/firstpage_backgound.png");
    width: 100%;
    background-size: 100% 100%;
+   background-repeat: no-repeat;
+   height: 100%;
+}
+
+.logo{
+   top: 64%;
+   right: -1%;
+   z-index: 10;
 }
 
 .top_left_image{
@@ -12,37 +19,57 @@
    margin-left: 26px;
    transition: .3s;
 }
-.logo{
-   top: 64%;
-   right: -1%;
-   z-index: 10;
-
+.content_1{
+   left:50%;
+   top:-70px;
+   transform: translateX(-50%);
 }
+.content_2{
+   top:-60px;
+}
+
 
 
 .header_top{
-   font-size: 3rem;
-   letter-spacing: 1rem;
-   color: black;
+   font-size: 2.7rem;
 
+    font-weight: 100;
 }
 .header_middle{
-   font-size: 5rem;
-   letter-spacing: 1rem;
-   color: black;
+   font-size: 4.5rem;
+   color: #464444;
 
 
 }
 .header_bottom{
-   font-size: 3rem;
-   letter-spacing: 1rem;
-   color: black;
-
+   font-size: 2.7rem;
+   font-weight: 100;
 }
 
+@media only screen and (min-width: 769px) and (max-width: 1300px) {
+     .logo_image{
+        width: 240px;
+        height: 180px;
+     }
+     .logo{
+        top: 72%;
+        right: -4%;
+     }
+}
 
+@media only screen and (max-width: 768px){
+   .logo{
+      top: 73%;
+      right: -2%;
 
-@media only screen and (max-width: 768px) {
+   }
+   .logo_image{
+      width: 230px;
+      height: 170px;
+   }
+   .first_page_background{
+      background-image: url("../public/images/page_1/first_page_vertical.png");
+   }
    .top_left_image{
       margin-top: 0px;
       margin-left: 0px;
@@ -52,20 +79,42 @@
    .first_page_background h4{
       font-size: 1.5rem;
    }
+   .content_2{
+      top:7%;
+   }
 
+   .content_1{
+      left: 28%;
+      top: 1px;
+
+   }
 
    .header_top{
-      font-size: 2.5rem;
-      letter-spacing: .7rem;
+      font-size: 2.3rem;
+
    }
    .header_middle{
-      font-size: 4rem;
-      letter-spacing: .7rem;
+      font-size: 3.8rem;
+
 
 
    }
    .header_bottom{
       font-size: 2.5rem;
-      letter-spacing: .7rem;
+
    }
 }
+
+@media only screen and (max-width: 600px) {
+   .logo_image{
+      width: 210px;
+      height: 150px;
+   }
+   .logo{
+      top: 77%;
+      right: -3%;
+   }
+
+}
+
+

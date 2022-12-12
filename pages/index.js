@@ -13,6 +13,8 @@ import EighthPage from "../components/EighthPage";
 import FooterPge from "../components/FooterPge";
 import {Animate, useElementOnScreen} from "../hooks/useElementOnScreen";
 import {useRef} from 'react'
+import FirstPage1 from "../components/FirstPage1";
+import SeconPage1 from "../components/SeconPage1";
 
 export default function Home() {
     const firstAnimate=useRef();
@@ -28,14 +30,14 @@ export default function Home() {
       <div className={styles.main}>
          <Suspense fallback={<LoadingPage></LoadingPage>}>
              <Animate.FadeUp>
-             <div className={styles.container}>
+             <div className={styles.container} style={{minHeight:'100vh'}}>
                  <FirstPage></FirstPage>
              </div>
              </Animate.FadeUp>
 
              <Animate.FadeUp>
              <div  className={styles.container}>
-                 <SecondPage></SecondPage>
+                 <SeconPage1></SeconPage1>
              </div>
              </Animate.FadeUp>
 

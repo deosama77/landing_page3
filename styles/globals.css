@@ -1,9 +1,19 @@
+@font-face {
+  font-family: 'fontWebCh_Dengb';
+  src: url('../public/fonts/Dengb.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'fontWebCh_Zi';
+  src: url('../public/fonts/ZiTiGuanJiaFangSongTi_2.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   color: #696565;
-  font-family: "Times New Roman", Times, serif;
+  font:inherit;
+  font-family: fontWebCh_Dengb;
 
 }
 
