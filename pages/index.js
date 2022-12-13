@@ -16,7 +16,7 @@ import {useRef} from 'react'
 import FirstPage1 from "../components/FirstPage1";
 import SeconPage1 from "../components/SeconPage1";
 import ThirdPage1 from "../components/ThirdPage1";
-
+import FourthPage1 from "../components/FourthPage1";
 export default function Home() {
     const firstAnimate=useRef();
     useElementOnScreen(firstAnimate);
@@ -49,7 +49,7 @@ export default function Home() {
               </Animate.FadeUp>
              <Animate.FadeUp>
              <div className={styles.container}>
-                 <FourthPage></FourthPage>
+                 <FourthPage1></FourthPage1>
              </div>
              </Animate.FadeUp>
              <Animate.FadeUp>

@@ -5,7 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCheck, faCircleXmark} from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import WechatVertical from '../public/images/page_3/wechat_vertical.png';
-import WechatHorizontal from '../public/images/page_3/wechat_horizontal.png';
+import WechatHorizontal from '../public/images/page_3/wechat_img2.png';
 
 
 function ThirdPage1(props) {
@@ -41,7 +41,7 @@ function ThirdPage1(props) {
                         />
                         <span className={'h5 text-center'}>和眼型不满意</span>
                     </div>
-                    <div className={'py-2 p-md-0 d-flex flex-column justify-content-center align-items-center'}>
+                    <div className={' p-md-0 d-flex flex-column justify-content-center align-items-center'}>
                         <FontAwesomeIcon icon={faCircleXmark}
                                          width={25}
                                          height={25}
@@ -52,8 +52,8 @@ function ThirdPage1(props) {
                     </div>
                 </Col>
 
-                 <Col xs={6} md={6} className={'m-0 p-0'} style={{height:300}} >
-                     <div style={{width:'400px' , height:320 , position:"relative"}}
+                 <Col xs={6} md={7} className={'m-0 p-0'} style={{height:319}} >
+                     <div style={{width:'100%' , height:"100%" , position:"relative"}}
                           className={style.middleImage_vertical}
                           >
                          <Image src={WechatVertical} alt={"picture"}
@@ -61,7 +61,7 @@ function ThirdPage1(props) {
                          ></Image>
                      </div>
 
-                     <div style={{width:"100%" , height:'380px' , position:"relative"}}
+                     <div style={{width:"100%" , height:'100%' , position:"relative"}}
                           className={style.middleImage_horizontal}
                      >
                          <Image src={WechatHorizontal} alt={"picture"}
@@ -70,7 +70,7 @@ function ThirdPage1(props) {
                      </div>
                  </Col>
 
-                <Col xs={6} md={3} className={"d-flex flex-column justify-content-center align-items-end"}>
+                <Col xs={6} md={2} className={"d-flex flex-column justify-content-center align-items-end"}>
                     <div className={'text-center pb-1 pt-3 border  rounded-5  my-1 position-relative'} style={{backgroundColor:'#f9f0f0'}}>
                         <div className={'h3 text-center'} style={{width:200}} >五官立体感</div>
                         <FontAwesomeIcon icon={faCheck}

@@ -1,5 +1,6 @@
 
 .right_image_text{
+    display: block;
     position: absolute;
     top:0px;
     left: 0px;
@@ -20,6 +21,17 @@
     letter-spacing: 1.2rem;
 }
 
+.text_vertical{
+    position: absolute;
+    top:2%;
+    left: 50%;
+    transform:translateX(-50%);
+    font-weight: normal;
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    margin-bottom: 1rem;
+}
+
 .ex_up{
     top: 12%;
     right: 21%;
@@ -29,20 +41,28 @@
 .ex_down{
     top: 84%;
     right: 17%;
-    background-color:#f9f0f0;
+    background-color: #c7bfbf;
     font-size: 1.3rem;
 }
-
-@media only screen and (max-width: 768px) {
+.image_vertical{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .right_image_text{
+        display: none;
+    }
     .ex_down{
         right: 14%;
     }
 
     .text_position{
-        top:40%;
-        right: 20%;
-        font-weight: normal;
-        font-size: 35rem;
-        letter-spacing: 1rem;
+     display: none;
+    }
+    .image_vertical{
+        width: 100vw;
+        height: 70vh;
+        display: block;
+        top:78px;
     }
 }
+
