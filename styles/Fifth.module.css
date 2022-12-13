@@ -1,67 +1,100 @@
 .click_icon{
     position: relative;
-   bottom: 20px;
+    bottom: 70px;
+    width: 240px;
+    height: 100px;
+    cursor: pointer;
 }
 
-.image_bottom{
-    bottom: -85px;
-    right: -5%;
-    z-index: 1;
-}
 
 
 .header_card{
-    letter-spacing: .8rem;
-    font-weight: 250;
+    font-size: 2.5rem;
+    letter-spacing: .3rem;
+    font-weight: 200;
 
 }
 
 .app{
-    letter-spacing: normal;
-    font-weight: normal;
+    letter-spacing: .1rem;
+    font-weight: 100;
     color: black;
 }
 .slash_number{
-    font-size: 3rem;
+    font-size: 2.5rem;
     position: relative;
     top:-24px;
     right: 10px;
     color: black;
+    font-width: 100;
 }
 
 .slash{
     position: absolute;
     bottom: -23px;
     right: -11px;
+    font-weight: 100;
 }
 
-
-@media only screen and (max-width: 850px) {
-    .image_bottom{
-        z-index: 0;
+@media only screen and (min-width: 769px) {
+    .image_bottom1{
+        right: -2%;
+        bottom: -79px;
+        width: 450px;
+        height: 500px;
+    }
+}
+.image_bottom1{
+    right: -10%;
+    bottom: -20px;
+    width: 300px;
+    height: 400px;
+}
+.left_image{
+    top: -100px;
+    width: 50vw;
+    height: 100vh;
+}
+@media only screen and (min-width: 769px) {
+    .image_bottom1{
+        right: -10%;
+        bottom: -20px;
+        width: 400px;
+        height: 500px;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .image_bottom1{
+        right: -6%;
+        bottom: -50px;
+        width: 400px;
+        height: 500px;
     }
 }
 @media only screen and (min-width: 1200px) {
-    .image_bottom{
-        z-index: 0;
-        right: 3px;
+    .image_bottom1{
+        right: -2%;
+        bottom: -79px;
+        width: 400px;
+        height: 500px;
     }
 }
 
-@media only screen and (min-width: 1300px) {
-    .image_bottom{
-        right: 7%;
+@media only screen and (max-width: 400px) {
+    .image_bottom1{
+        right: -14%;
+        bottom: -79px;
+        width: 250px;
+        height: 350px;
+    }
+
+    .click_icon{
+       right: 40px;
+        width: 200px;
+        height: 80px;
     }
 }
-@media only screen and (min-width: 1800px) {
-    .image_bottom{
-        right: 12%;
-    }
-}
-@media only screen and (min-width: 2000px) {
-    .image_bottom{
-        right: 16%;
-    }
-}
+
+
 
 
