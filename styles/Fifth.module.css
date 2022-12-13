@@ -3,7 +3,6 @@
     bottom: 70px;
     width: 240px;
     height: 100px;
-    cursor: pointer;
 }
 
 
@@ -52,7 +51,7 @@
 }
 .left_image{
     top: -100px;
-    width: 50vw;
+    width: 90vw;
     height: 100vh;
 }
 @media only screen and (min-width: 769px) {
@@ -62,6 +61,9 @@
         width: 400px;
         height: 500px;
     }
+    .left_image{
+        width: 60vw;
+    }
 }
 @media only screen and (min-width: 1000px) {
     .image_bottom1{
@@ -69,6 +71,9 @@
         bottom: -50px;
         width: 400px;
         height: 500px;
+    }
+    .left_image{
+        width: 40vw;
     }
 }
 @media only screen and (min-width: 1200px) {

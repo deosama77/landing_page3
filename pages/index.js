@@ -17,6 +17,8 @@ import FirstPage1 from "../components/FirstPage1";
 import SeconPage1 from "../components/SeconPage1";
 import ThirdPage1 from "../components/ThirdPage1";
 import FourthPage1 from "../components/FourthPage1";
+import SixthPage1 from "../components/SixthPage1";
+import React from "react";
 export default function Home() {
     const firstAnimate=useRef();
     useElementOnScreen(firstAnimate);
@@ -29,6 +31,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.main}>
+
          <Suspense fallback={<LoadingPage></LoadingPage>}>
              <Animate.FadeUp>
              <div className={styles.container} style={{minHeight:'100vh'}}>
@@ -60,7 +63,7 @@ export default function Home() {
 
              <Animate.FadeUp>
              <div className={styles.container}>
-                 <SixthPage></SixthPage>
+                 <SixthPage1></SixthPage1>
              </div>
              </Animate.FadeUp>
 

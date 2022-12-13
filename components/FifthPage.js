@@ -3,8 +3,9 @@ import Image from 'next/image';
 import ImageUp from '../public/images/page_5/wechat_image.png';
 import ImageBottom from "../public/images/page_5/wechat_bottom.png";
 import styles from '../styles/Fifth.module.css';
-import {Col,Row, Container} from "react-bootstrap";
+import {Col, Row, Container, Button} from "react-bootstrap";
 import ClickIcon from '../public/images/page_5/icons-01_v5.png'
+
 function FifthPage(props) {
     return (
         <>
@@ -15,7 +16,7 @@ function FifthPage(props) {
 
             <Container className={'position-relative'}>
                 <Row className={'py-3 gap-2 d-flex justify-content-center w-100'}>
-                    <Col xs={12} lg={5}  className={'py-4 px-4  bg-white bg-opacity-50 border rounded-5 border-warning ' +
+                    <Col xs={12} lg={5}  className={'py-4 px-4  bg-white bg-opacity-75 border rounded-5 border-warning ' +
                         'd-flex flex-column justify-content-md-center align-items-end'}>
                         <div className={'h1 text-end '+styles.header_card}>3年严苛训练</div>
                         <div className={'h1 text-end '+styles.header_card}>造就精妙手艺</div>
@@ -66,10 +67,10 @@ function FifthPage(props) {
                     </Col>
                 </Row>
                 <Row className={'w-100 justify-content-center'}>
-                    <div className={'d-flex align-items-start justify-content-center '+styles.click_icon}>
-                        <Image className={'fa-fade'} style={{cursor:'pointer'}}
-                               src={ClickIcon} alt={"click icon"} fill={+true}></Image>
-                    </div>
+                        <div className={'d-flex align-items-start justify-content-center '+styles.click_icon}>
+                            <Image className={'fa-fade'}
+                                   src={ClickIcon} alt={"click icon"} fill={+true}></Image>
+                        </div>
                 </Row>
             </Container>
         </>
