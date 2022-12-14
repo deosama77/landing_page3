@@ -72,7 +72,7 @@ function SeventhPage(props) {
 
            <Row className={'justify-content-center align-items-center'}>
 
-               <Col  xl={4} lg={6} className={'my-1 m-lg-0 d-flex justify-content-center align-items-center'}>
+               <Col  xl={12} lg={4} className={'my-1 m-lg-0 d-flex justify-content-center align-items-center'}>
                    <Animate.ScaleIn>
                   <Image src={Image_row1_col1} alt={"image 1"}
                   width={320} height={230}></Image>
@@ -80,7 +80,7 @@ function SeventhPage(props) {
                </Col>
 
 
-               <Col xl={4} lg={6} className={'my-1 m-lg-0 d-flex justify-content-center align-items-center'}>
+               <Col xl={6} lg={3} className={'my-1 m-lg-0 d-flex justify-content-center align-items-center'}>
                    <Animate.ScaleIn>
                    <Image src={Image_row1_col2} alt={"image 1"}
                           width={300} height={180}></Image>
@@ -88,7 +88,7 @@ function SeventhPage(props) {
                </Col>
 
 
-               <Col xl={4} lg={5} className={'my-1 m-lg-0 d-flex justify-content-center align-items-center'}>
+               <Col xl={6} lg={5} className={'my-1 m-lg-0 d-flex justify-content-center align-items-center'}>
                    <Animate.ScaleIn>
                    <Image src={Image_row1_col3} alt={"image 1"}
                           width={300} height={180}></Image>

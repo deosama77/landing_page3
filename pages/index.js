@@ -19,6 +19,7 @@ import ThirdPage1 from "../components/ThirdPage1";
 import FourthPage1 from "../components/FourthPage1";
 import SixthPage1 from "../components/SixthPage1";
 import React from "react";
+import SeventhPage1 from "../components/SeventhPage1";
 export default function Home() {
     const firstAnimate=useRef();
     useElementOnScreen(firstAnimate);
@@ -69,7 +70,7 @@ export default function Home() {
 
              <Animate.FadeUp>
              <div className={styles.container} style={{paddingBottom:'50px'}}>
-                 <SeventhPage></SeventhPage>
+                 <SeventhPage1></SeventhPage1>
              </div>
              </Animate.FadeUp>
              <Animate.FadeUp>
