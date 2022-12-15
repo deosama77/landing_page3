@@ -2,7 +2,7 @@ import React , {useRef} from 'react';
 import {Container , Col , Row} from "react-bootstrap";
 import styles from '../styles/First.module.css'
 import Image from "next/image";
-import TopLeftImage from '../public/images/page_1/Icons_1_21.png'
+import TopLeftImage from '../public/images/page_1/top_left_h.png'
 import Logo from '../public/images/page_1/Sense_Logo.png';
 
 import Icone2 from '../public/images/page_1/icons_2_new_c.png';
@@ -61,6 +61,8 @@ function FirstPage(props) {
                         </div>
 
                     </div>
+
+
                 </Animate.ScaleIn>
             </div>
         </>

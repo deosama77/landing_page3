@@ -23,57 +23,57 @@ function FooterPge(props) {
             </div>
         <Container>
             <Row>
-                <div className={'h1 text-center py-md-3'} style={{fontSize:'3rem' ,
-                    letterSpacing:'.6rem'}}>品牌承诺</div>
+                <div className={'h1 text-center py-md-3'} style={{fontSize:'2.8rem' ,
+                    letterSpacing:'.5rem'}}>品牌承诺</div>
             </Row>
             <Row>
                 <Col className={'py-2 bg-white bg-opacity-50 border border-3 border-warning rounded-5 '}>
                     <Container>
-                        <Row className={'py-md-3 py-2'}>
-                            <Col xs={6} md={4} lg={3} className={'py-md-2 d-flex flex-column align-items-center'}>
+                        <Row className={'py-md-3 py-2 justify-content-center'}>
+                            <Col xs={6} sm={4} lg={3} className={'py-md-2 d-flex flex-column align-items-center'}>
                                 <Image src={Icons_13} alt={"imge 13"}
                                        width={50} height={50}></Image>
                                 <div className={'h4'}>粉粉雾雾</div>
                                 <div className={'h4'}>立即效果</div>
                             </Col>
-                            <Col xs={6} md={4} lg={3}  className={'py-md-2 d-flex flex-column align-items-center'}>
+                            <Col xs={6} sm={4}lg={3}  className={'py-md-2 d-flex flex-column align-items-center'}>
                                 <Image src={Icons_14} alt={"imge 13"}
                                        width={50} height={50}></Image>
                                 <div className={'h4'}>操作过程</div>
                                 <div className={'h4'}>全程无痛</div>
                             </Col>
-                            <Col xs={6} md={4} lg={3}  className={'py-md-2 d-flex flex-column align-items-center'}>
+                            <Col xs={6} sm={4} lg={3}  className={'py-md-2 d-flex flex-column align-items-center'}>
                                 <Image src={Icons_15} alt={"imge 13"}
                                        width={50} height={50}></Image>
                                 <div className={'h4'}>安全&干净</div>
                             </Col>
-                            <Col xs={6} md={4} lg={3}  className={'py-md-2 d-flex flex-column align-items-center'}>
+                            <Col xs={6} sm={4} lg={3}  className={'py-md-2 d-flex flex-column align-items-center'}>
                                 <Image src={Icons_16} alt={"imge 13"}
                                        width={50} height={50}></Image>
                                 <div className={'h4'}>一遍上色、<br/>百分百留色</div>
                             </Col>
 
 
-                            <Col xs={6} md={4} lg={3}  className={'py-md-2 d-flex flex-column align-items-center'}>
+                            <Col xs={6} sm={4} lg={3}  className={'py-md-2 d-flex flex-column align-items-center'}>
                                 <Image src={Icons_17} alt={"imge 13"}
                                        width={50} height={50}></Image>
                                 <div className={'h4'}>100% 天然</div>
                                 <div className={'h4'}>植物色料</div>
                             </Col>
-                            <Col xs={6}  md={4} lg={3}  className={'py-md-2 d-flex flex-column align-items-center'}>
+                            <Col xs={6} sm={4} lg={3}  className={'py-md-2 d-flex flex-column align-items-center'}>
                                 <Image src={Icons_18} alt={"imge 13"}
                                        width={50} height={50}></Image>
                                 <div className={'h4'}>
                                     严格专业<div/><div className={'h4'}>纹绣师</div>
                             </div>
                             </Col>
-                            <Col xs={6} md={4} lg={3}  className={'py-md-2 d-flex flex-column align-items-center'}>
+                            <Col xs={6} sm={4} lg={3}  className={'py-md-2 d-flex flex-column align-items-center'}>
                                 <Image src={Icons_19} alt={"imge 13"}
                                        width={50} height={50}></Image>
                                 <div className={'h4'}>所有案列全为</div>
                                 <div className={'h4'}>原相机拍摄，</div><div className={'h4'}>绝对真实</div>
                             </Col>
-                            <Col xs={6} md={4} lg={3}  className={'py-md-2 d-flex flex-column align-items-center'}>
+                            <Col xs={6} sm={4} lg={3}  className={'py-md-2 d-flex flex-column align-items-center'}>
                                 <Image src={Icons_20} alt={"imge 13"}
                                        width={50} height={50}></Image>
                                 <div className={'h4'}>绝对无任何</div>
@@ -84,19 +84,19 @@ function FooterPge(props) {
                     </Container>
                 </Col>
             </Row>
-            <Row>
-                <Col>
-                    <div className={'d-flex align-items-center justify-content-center'}>
+
+            <Row className={'py-3'}>
+                <Col xs={12} md={8}>
+                    <div className={'h3 text-center'}>Sense Embroidery</div>
+                    <div className={'h4 text-center'}>Petaling Jaya | Scott Garden | Penang</div>
+                    <div className={'h5 text-center'}>+6014-807 3636 | +6018-259 3836 | +6014-878 3636</div>
+                </Col>
+                <Col xs={12}  md={{span:4,order:'first'}}>
+                    <div className={'text-center'}>
                         <Image className={'fa-fade'}
-                               src={ClickIcon} alt={"click icon"} width={450} height={150}></Image>
+                               src={ClickIcon} alt={"click icon"} width={280} height={120}></Image>
                     </div>
                 </Col>
-                <Col  className={' py-md-5 py-3 d-flex flex-column justify-content-center align-items-center'}>
-                    <div className={'h3'}>Sense Embroidery</div>
-                    <div className={'h4'}>Petaling Jaya | Scott Garden | Penang</div>
-                    <div className={'h5'}>+6014-807 3636 | +6018-259 3836 | +6014-878 3636</div>
-                </Col>
-
             </Row>
         </Container>
             </>

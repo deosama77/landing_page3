@@ -10,29 +10,35 @@ function EighthPage(props) {
         <Container fluid={+true}>
             <Row>
                 <Col xs={12} md={6} >
-                    <Image src={ImageLeft} alt={"left image"} width={600} height={500}
-                           className={'opacity-50'}></Image>
+                    <div className={"position-relative"} style={{width:"100%",height:500}}>
+                        <Image src={ImageLeft} alt={"left image"} fill={+true}
+                               className={'opacity-75'}></Image>
+                    </div>
+
                 </Col>
-                <Col xs={12} md={6} className={'py-5 mt-2 mt-md-5'}>
+                <Col xs={12} md={6} className={'py-3'}>
                    <Row className={'container pt-md-4'}>
                        <Col>
-                           <div className={'h1 text-center text-md-start '+styles.snese_header}>Sense Embroidery</div>
-                           <div className={'h1 text-center text-md-start '+styles.header_ch}>半永久定妆术</div>
-                           <div className={'h4 text-center text-md-start py-md-4'}>带你刷新审美认知行走在美学的最前沿。</div>
-                           <div className={'pb-md-4'}>
-                               <div className={'h4 text-center text-md-start'}>在未来的5年内与我们的纹绣师团队</div>
-                               <div className={'h4 text-center text-md-start'}>能在不同的地区开分行，</div>
-                               <div className={'h4 text-center text-md-start'}>让更多马来西亚女性得到她们该有的魅力&气质。</div>
+                           <div className={'h1  text-start '+styles.snese_header}>Sense Embroidery</div>
+                           <div className={'h1  text-start '+styles.header_ch}>半永久定妆术</div>
+                           <div className={'h4  text-start py-4'}>带你刷新审美认知行走在美学的最前沿。</div>
+                           <div className={'pb-4'}>
+                               <div className={'h4 text-start'}>在未来的5年内与我们的纹绣师团队</div>
+                               <div className={'h4 text-start '}>能在不同的地区开分行，</div>
+                               <div className={'h4 text-start'}>让更多马来西亚女性得到她们该有的魅力&气质。</div>
                            </div>
 
-                           <div className={'h4 text-center text-md-start'}>Beautiful is confidence,<br/>
+                           <div className={'h4  text-start pb-4'}>Beautiful is confidence,<br/>
                                and confidence is even more beautiful.</div>
-                           <div className={'d-flex align-items-start justify-content-start pt-2'}>
-                               <Image className={'fa-fade'}
-                                      src={ClickIcon} alt={"click icon"} width={270} height={70}></Image>
-                           </div>
                        </Col>
                    </Row>
+                    <Row className={'pt-2 justify-content-center'}>
+                        <div className={'text-center'}>
+                            <Image className={'fa-fade'}
+                                   style={{cursor:'pointer'}}
+                                   src={ClickIcon} alt={"click icon"} width={200} height={55}></Image>
+                        </div>
+                    </Row>
                 </Col>
             </Row>
 

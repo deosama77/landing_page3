@@ -121,6 +121,7 @@ function SeventhPage1(props) {
                 <Col xs={6} sm={4}>
                     <div className={"position-relative "+styles.click_icon}>
                         <Image className={'fa-fade'}
+                               style={{cursor:'pointer'}}
                                src={ClickIcon} alt={"click icon"}
                                fill={+true}></Image>
                     </div>

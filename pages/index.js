@@ -1,14 +1,11 @@
+import React from "react";
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import FirstPage from "../components/FirstPage";
-import SecondPage from "../components/SecondPage";
-import ThirdPage from "../components/ThirdPage";
-import FourthPage from "../components/FourthPage";
+
 import FifthPage from "../components/FifthPage";
 import { Suspense } from 'react';
 import LoadingPage from "../components/LoadingPage";
-import SixthPage from "../components/SixthPage";
-import SeventhPage from "../components/SeventhPage";
+
 import EighthPage from "../components/EighthPage";
 import FooterPge from "../components/FooterPge";
 import {Animate, useElementOnScreen} from "../hooks/useElementOnScreen";
@@ -18,8 +15,10 @@ import SeconPage1 from "../components/SeconPage1";
 import ThirdPage1 from "../components/ThirdPage1";
 import FourthPage1 from "../components/FourthPage1";
 import SixthPage1 from "../components/SixthPage1";
-import React from "react";
+
 import SeventhPage1 from "../components/SeventhPage1";
+import FirstPage from "../components/FirstPage";
+
 export default function Home() {
     const firstAnimate=useRef();
     useElementOnScreen(firstAnimate);
@@ -36,7 +35,7 @@ export default function Home() {
          <Suspense fallback={<LoadingPage></LoadingPage>}>
              <Animate.FadeUp>
              <div className={styles.container} style={{minHeight:'100vh'}}>
-                 <FirstPage></FirstPage>
+                 <FirstPage1></FirstPage1>
              </div>
              </Animate.FadeUp>
 

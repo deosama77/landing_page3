@@ -1,13 +1,144 @@
 import React from 'react';
 import Image from "next/image";
-import Gold1 from '../public/images/page_1/gold_1.png';
-import Gold2 from '../public/images/page_1/gold_2.png';
+import {Container, Row, Col} from "react-bootstrap";
+
+import GoldTopV from '../public/images/page_1/gold_top_v.png';
+import GoldBottomV from '../public/images/page_1/gold_bottom_v.png';
+import GoldBottomH from '../public/images/page_1/gold_bottom_h.png';
+import GoldTopH from '../public/images/page_1/gold_top_h.png';
+
+import styles from "../styles/First1.module.css";
+import Logo from "../public/images/page_1/Sense_Logo.png";
+
+import TopLeftImage_v from "../public/images/page_1/top_left_cut.png";
+import TopLeftImage_h from '../public/images/page_1/top_left_h.png'
+
+
+import Icone2 from "../public/images/page_1/icons_2_new_c.png";
+import Icone3 from "../public/images/page_1/icons_1_03_new.png";
+import Icone4 from "../public/images/page_1/icons_1_04_new.png";
+
+import RightVertical from '../public/images/page_1/right_v.png';
+import HImage from '../public/images/page_1/horizontal_01.png'
 
 function FirstPage1(props) {
     return (
-        <div className={'position-absolute fa-layers-top-left'}>
-            <Image src={Gold1} alt={"Gold 1 "} width={200} height={130}></Image>
-        </div>
+        <>
+            <div className={'position-absolute '+styles.right_image_v}
+                 style={{width:'100%',height:"180vh" , top:'0px' ,right:0}}>
+                <Image src={RightVertical} alt={'right vertical'}
+                       fill={+true}
+                ></Image>
+            </div>
+
+            <div className={'position-absolute '+styles.right_image_h}
+                 style={{width:'50%',height:"120vh" , top:'0px' ,right:0}}>
+                <Image src={HImage} alt={'right horizontal'}
+                       fill={+true}
+                ></Image>
+            </div>
+
+        <Container fluid={+true}>
+            <Row>
+                <Col xs={8} className={'m-0 p-0'}>
+                    <div className={'position-relative'} style={{width: '100%', height: '30vh'}}>
+                        <Image src={GoldTopV} alt={"Gold Top"}
+                               fill={+true}></Image>
+                    </div>
+                </Col>
+
+            </Row>
+            <Row>
+                <Col xs={9} >
+                    <Container fluid={+true}>
+                        <Row className={'align-items-start justify-content-center'}>
+                            <Col className={'m-0 p-0 '+styles.top_left_image_container} xs={12}>
+                                <div className={'position-relative '+styles.top_left_image_v}>
+                                    <Image src={TopLeftImage_v}
+                                           alt={"first picture"}
+                                           fill={+true}
+                                    ></Image>
+                                </div>
+
+                                <div className={'position-relative '+styles.top_left_image_h}>
+                                    <Image src={TopLeftImage_h}
+                                           alt={"first picture"}
+                                           fill={+true}
+                                    ></Image>
+                                </div>
+                            </Col>
+
+                            <Col xs={12} className={'d-flex flex-column justify-content-center align-items-md-center'}>
+                                    <h2 className={'h1 my-2 '+styles.header_top}>马来西亚首创</h2>
+                                    <h1 className={'h1 my-2 '+styles.header_middle}>「捏骨式」</h1>
+                                    <h2 className={'h1 my-2 '+styles.header_bottom}>半永久纹绣品牌</h2>
+                            </Col>
+
+                        </Row>
+
+                        <Row className={'justify-content-center'}>
+                            <Col xs={12} md={6} lg={4} className={'py-2'}>
+                                <div className={'px-3 py-3 border rounded-3 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
+                                    <Image src={Icone2} alt={"icone 2"}
+                                           width={40} height={40}
+                                           className={'rounded-circle mx-2'}
+                                    ></Image>
+                                    <div className={"h3 mb-0"}>自然伪妆感</div>
+                                </div>
+                            </Col>
+                            <Col xs={12} md={6} lg={4}  className={'py-2'}>
+                                <div className={'px-3 py-3 border  rounded-3 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
+                                    <Image src={Icone3} alt={"icone 2"}
+                                           width={40} height={40}
+                                           className={'rounded-circle mx-2'}
+                                    ></Image> <div className={"h3 mb-0"}>科技修饰脸型</div>
+                                </div>
+                            </Col>
+                            <Col xs={12} md={6} lg={4}  className={'py-2'}>
+                                <div className={'px-3 py-3 border  rounded-3 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
+                                    <Image src={Icone4} alt={"icone 2"}
+                                           width={40} height={40}
+                                           className={'rounded-circle mx-2'}
+                                    ></Image> <div className={"h3 mb-0"}>无疼过程</div>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
+
+                </Col>
+
+            </Row>
+
+            <Row className={'align-items-end'}>
+                <Col xs={12} className={'m-0 p-0'}>
+                        <div className={'position-relative '+styles.goldBotomV} style={{width: '100%', height: '35vh'}}
+                             >
+                            <Image src={GoldBottomV} alt={"Gold Top"}
+                                   fill={+true}></Image>
+                            <div className={'position-absolute'} style={{width: '190px', height: '160px'
+                                , right:-10 , top:35}}>
+                                <Image src={Logo} alt={"Gold Top"}
+                                       fill={+true}></Image>
+                            </div>
+                        </div>
+
+                    <div className={'position-relative '+styles.goldBotomH}
+                         style={{width: '100%', height: '50vh'}}>
+                        <Image src={GoldBottomH} alt={"Gold bottom horizontal"}
+                               fill={+true}></Image>
+                        <div className={'position-absolute'}
+                             style={{width: '280px', height: '220px'
+                            , right:-10 , top:35}}>
+                            <Image src={Logo} alt={"Gold Top"}
+                                   fill={+true}></Image>
+                        </div>
+                    </div>
+
+                    </Col>
+
+            </Row>
+        </Container>
+            </>
     );
 }
 

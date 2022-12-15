@@ -1,10 +1,12 @@
 .click_icon_container{
     position: absolute;
-    bottom: 10px;
+    bottom: -10px;
     left:50%;
     transform: translateX(-50%);
 
 }
+
+
 
 .check_icon{
     position: absolute;
@@ -43,5 +45,12 @@
     }
     .middleImage_horizontal{
         display: block;
+    }
+
+
+}
+@media (min-width: 796px) and (max-width: 950px) {
+    .wechatH{
+        width: 90%;
     }
 }
