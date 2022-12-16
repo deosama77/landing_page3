@@ -54,7 +54,7 @@ function FirstPage1(props) {
 
             </Row>
             <Row>
-                <Col xs={8} className={'p-0 m-0 position-relative'} style={{left:'-10px'}}>
+                <Col xs={8} md={10} className={'p-0 m-0 position-relative'} style={{left:'-10px'}}>
                     <Container fluid={+true}>
                         <Row className={'align-items-start justify-content-center'}>
                             <Col className={'m-0 p-0  '+styles.top_left_image_container} xs={12}>
