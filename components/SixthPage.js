@@ -4,7 +4,8 @@ import RightCut from '../public/images/page_6/horizontal_right.png';
 import LeftCut from '../public/images/page_6/horizontal_left.png';
 import Image from 'next/image';
 import styles from '../styles/sexth.module.css';
-import ClickIcon from '../public/images/click_01_cut.png'
+import ClickIcon from '../public/images/click_01_cut.png';
+
 function SixthPage(props) {
     return (
         <Container  aria-expanded={+true} className={'py-3'}>

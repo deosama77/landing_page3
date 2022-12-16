@@ -3,7 +3,7 @@ import Image from 'next/image';
 import ImageUp from '../public/images/page_5/wechat_image.png';
 import ImageBottom from "../public/images/page_5/wechat_bottom.png";
 import styles from '../styles/Fifth.module.css';
-import {Col, Row, Container, Button} from "react-bootstrap";
+import {Col, Row, Container} from "react-bootstrap";
 import ClickIcon from '../public/images/page_5/icons-01_v5.png'
 
 function FifthPage(props) {

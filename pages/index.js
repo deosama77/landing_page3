@@ -14,11 +14,10 @@ import {useRef} from 'react'
 import FirstPage1 from "../components/FirstPage1";
 import SeconPage1 from "../components/SeconPage1";
 import ThirdPage1 from "../components/ThirdPage1";
-import FourthPage1 from "../components/FourthPage1";
 import SixthPage1 from "../components/SixthPage1";
 
 import SeventhPage1 from "../components/SeventhPage1";
-import FirstPage from "../components/FirstPage";
+
 
 export default function Home() {
     const firstAnimate=useRef();

@@ -35,33 +35,42 @@ function SeventhPage1(props) {
                 </Col></Row>
 
             <Row className={'justify-content-center align-items-md-center'}>
+
                 <Col xs={9} md={6} lg={4} className={'py-3 text-center'}>
+                    <Animate.ScaleIn>
                     <div className={'position-relative'}
                          style={{width: '100%', height: 230}}>
                         <Image src={Image_row1_col1} alt={"image 1"}
                                className={'rounded-1'}
                                fill={+true}></Image>
                     </div>
+                    </Animate.ScaleIn>
                 </Col>
 
 
+
                 <Col xs={6} md={6} lg={4} className={'py-3'}>
+                    <Animate.ScaleIn>
                     <div className={'position-relative'}
                          style={{width: '100%', height: 180}}>
                         <Image src={Image_row1_col2} alt={"image 1"}
                                className={'rounded-1'}
                                fill={+true}></Image>
                     </div>
+                    </Animate.ScaleIn>
                 </Col>
 
                 <Col xs={6} md={6} lg={4} className={'py-3'}>
+                    <Animate.ScaleIn>
                     <div className={"position-relative"}
                          style={{width: '100%', height: 180}}>
                         <Image src={Image_row1_col3} alt={"image 1"}
                                className={'rounded-1'}
                                fill={+true}></Image>
                     </div>
+                    </Animate.ScaleIn>
                 </Col>
+
             </Row>
 
             <Row style={{height:0}}>
@@ -93,38 +102,47 @@ function SeventhPage1(props) {
 
             <Row className={'justify-content-center justify-content-lg-start'}>
                 <Col xs={10} lg={{span:5,offset:1}} className={'py-3'}>
+                    <Animate.ScaleIn>
                     <div className={'position-relative'} style={{width: '100%', height: 230}}>
                         <Image src={Image_row2_col1} alt={"image 1"}
                                className={'rounded-1'}
                                fill={+true}></Image>
                     </div>
+                    </Animate.ScaleIn>
                 </Col>
 
                 <Col xs={10} lg={5} className={'py-3'}>
+                    <Animate.ScaleIn>
                     <div className={'position-relative '+styles.bottom_1} style={{width: '100%', height: 180}}>
                         <Image src={Image_row2_col2} alt={"image 1"}
                                className={'rounded-1'}
                                fill={+true}></Image>
                     </div>
+                    </Animate.ScaleIn>
                 </Col>
             </Row>
             <Row className={'justify-content-center justify-content-lg-end '+styles.last_row}>
+
                 <Col xs={10} lg={5}>
+                    <Animate.ScaleIn>
                     <div className={'position-relative '+styles.bottom_2} style={{width: '100%', height: 180 }}>
                         <Image src={Image_row2_col3} alt={"image 1"}
                                className={'rounded-1'}
                                fill={+true}></Image>
                     </div>
+                    </Animate.ScaleIn>
                 </Col>
             </Row>
-            <Row className={'justify-content-end justify-content-sm-center pt-3 '+styles.click_icon_row}>
+            <Row className={'justify-content-end justify-content-sm-center pt-3  '+styles.click_icon_row}>
                 <Col xs={6} sm={4}>
-                    <div className={"position-relative "+styles.click_icon}>
-                        <Image className={'fa-fade'}
+
+                    <div className={"position-relative fa-fade  "+styles.click_icon}>
+                        <Image
                                style={{cursor:'pointer'}}
                                src={ClickIcon} alt={"click icon"}
                                fill={+true}></Image>
                     </div>
+
                 </Col>
             </Row>
         </Container>

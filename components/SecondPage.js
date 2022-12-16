@@ -1,4 +1,4 @@
-import React, { useRef} from 'react';
+import React from 'react';
 import styles from '../styles/Second.module.css';
 import Icon1 from '../public/images/page_2/Icons_1_05.png';
 import Icon2 from '../public/images/page_2/Icons_1_06.png';

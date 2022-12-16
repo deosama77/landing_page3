@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useRef} from 'react';
 import Image from "next/image";
 import {Container, Row, Col} from "react-bootstrap";
 
@@ -21,7 +21,12 @@ import Icone4 from "../public/images/page_1/icons_1_04_new.png";
 import RightVertical from '../public/images/page_1/right_v.png';
 import HImage from '../public/images/page_1/horizontal_01.png'
 
+import {Animate, useElementOnScreen} from "../hooks/useElementOnScreen";
+
 function FirstPage1(props) {
+    const firstAnimate=useRef();
+    useElementOnScreen(firstAnimate);
+
     return (
         <>
             <div className={'position-absolute '+styles.right_image_v}
@@ -75,8 +80,9 @@ function FirstPage1(props) {
                             </Col>
 
                         </Row>
-
+                        <Animate.ScaleIn>
                         <Row className={'justify-content-center'}>
+
                             <Col xs={12} md={6} lg={4} className={'py-2'}>
                                 <div className={'px-3 py-3 border rounded-3 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
                                     <Image src={Icone2} alt={"icone 2"}
@@ -102,7 +108,9 @@ function FirstPage1(props) {
                                     ></Image> <div className={"h3 mb-0"}>无疼过程</div>
                                 </div>
                             </Col>
+
                         </Row>
+                        </Animate.ScaleIn>
                     </Container>
 
                 </Col>

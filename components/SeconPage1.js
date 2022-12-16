@@ -1,4 +1,4 @@
-import React from 'react';
+import React  , {useRef} from 'react';
 import {Container, Row , Col} from "react-bootstrap";
 import ImageTop from '../public/images/page_2/right_image_vertical.png';
 import ImageBottom from '../public/images/page_2/left_image_veretical.png';
@@ -9,8 +9,11 @@ import Icon2 from "../public/images/page_2/Icons_1_06.png";
 import Icon3 from "../public/images/page_2/Icons_1_07.png";
 import ImageLeft from '../public/images/page_2/left_img.png';
 import ImageRight from '../public/images/page_2/right_img.png';
+import {Animate, useElementOnScreen} from "../hooks/useElementOnScreen";
 
 function SeconPage1(props) {
+    const firstAnimate=useRef();
+    useElementOnScreen(firstAnimate);
     return (
         <>
             <Col xs={12} className={styles.card_sense +' border border-3 border-warning rounded-5 p-1 pt-3'} >

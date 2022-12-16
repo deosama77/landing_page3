@@ -6,7 +6,6 @@ import {faCheck, faCircleXmark} from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import WechatVertical from '../public/images/page_3/wechat_vertical.png';
 import WechatHorizontal from '../public/images/page_3/wechat_img2.png';
-import ClickIcon from "../public/images/buttons_01.png";
 
 
 function ThirdPage1(props) {
