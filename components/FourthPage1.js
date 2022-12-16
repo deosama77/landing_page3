@@ -8,14 +8,14 @@ function FourthPage1(props) {
     return (
         <Container fluid={+true} className={'pt-2'}>
             <Row>
-                <Col xs={12} sm={3} className={'py-5  d-flex flex-column justify-content-center align-items-center position-relative'}>
+                <Col xs={12} sm={5} className={'py-5  d-flex flex-column justify-content-center align-items-center position-relative'}>
                    <div className={'position-absolute  text-center text-sm-end '+styles.text_title} >
                        <div className={'h1'}>独有鼻影技术</div>
                        <div className={'h1'}>增强面部立体度</div>
                    </div>
 
                 </Col>
-                <Col xs={12} sm={9} className={'my-4 mx-0 px-0'}>
+                <Col xs={12} sm={7} className={'my-4 mx-0 px-0'}>
                     <div className={"py-2 px-2 border border-3 rounded-5 position-absolute "+styles.ex_up_vertical}>眉形包着眼睛的弧线</div>
                     <div className={'py-2 px-5 border border-3 rounded-5 position-absolute '+styles.ex_down_vertical}>
                         <div>体现鼻影效果</div>

@@ -1,0 +1,49 @@
+.ex_up_horizontal{
+    background-color:#f9f0f0;
+    font-size: 1.3rem;
+    top:140px;
+    right: 20%;
+    z-index: 2;
+    display: block;
+}
+.ex_down_horizontal{
+    background-color:#f9f0f0;
+    font-size: 1.3rem;
+    bottom: 20px;
+    right: 20%;
+    z-index: 2;
+    display: block;
+}
+
+.text_title{
+    position: absolute;
+    top: 0;
+}
+
+.title1{
+    font-size: 3rem;
+    letter-spacing: .5rem;
+}
+.title2{
+    font-size: 3rem;
+    letter-spacing: .5rem;
+}
+.image_h{
+    display: none;
+}
+.image_v{
+    display: block;
+}
+@media (min-width: 769px) {
+    .image_h{
+        display: block;
+    }
+    .image_v{
+        display: none;
+    }
+
+    .text_title{
+        top: 50%;
+        left: 4%;
+    }
+}

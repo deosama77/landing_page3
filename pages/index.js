@@ -3,6 +3,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 import FifthPage from "../components/FifthPage";
+import FourthPage2 from '../components/FourthPage2'
 import { Suspense } from 'react';
 import LoadingPage from "../components/LoadingPage";
 
@@ -52,7 +53,7 @@ export default function Home() {
               </Animate.FadeUp>
              <Animate.FadeUp>
              <div className={styles.container}>
-                 <FourthPage1></FourthPage1>
+                 <FourthPage2></FourthPage2>
              </div>
              </Animate.FadeUp>
              <Animate.FadeUp>
