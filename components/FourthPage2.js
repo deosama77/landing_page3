@@ -28,7 +28,7 @@ function FourthPage2(props) {
 
             <div style={{height: '150vh'}} className={styles.image_v}>
                 <div
-                    className={"py-2 px-2 border border-3 rounded-5 position-absolute " + styles.ex_up_horizontal}>眉形包着眼睛的弧线
+                    className={"py-2 px-2 border border-3 rounded-5 position-absolute " + styles.ex_up_vertical}>眉形包着眼睛的弧线
                 </div>
                 <div className={'py-2 px-5 border border-3 rounded-5 position-absolute ' + styles.ex_down_horizontal}>
                     <div>体现鼻影效果</div>

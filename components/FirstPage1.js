@@ -30,7 +30,7 @@ function FirstPage1(props) {
     return (
         <>
             <div className={'position-absolute '+styles.right_image_v}
-                 style={{width:'100%',height:"180vh" , top:'0px' ,right:0}}>
+                 style={{width:'105%',height:"180vh" , top:'0px' ,right:0}}>
                 <Image src={RightVertical} alt={'right vertical'}
                        fill={+true}
                 ></Image>

@@ -1,6 +1,15 @@
 .ex_up_horizontal{
     background-color:#f9f0f0;
     font-size: 1.3rem;
+    top:62px;
+    right: 20%;
+    z-index: 2;
+    display: block;
+}
+
+.ex_up_vertical{
+    background-color:#f9f0f0;
+    font-size: 1.3rem;
     top:140px;
     right: 20%;
     z-index: 2;
