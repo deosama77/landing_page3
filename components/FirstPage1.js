@@ -125,8 +125,7 @@ function FirstPage1(props) {
                              >
                             <Image src={GoldBottomV} alt={"Gold Top"}
                                    fill={+true}></Image>
-                            <div className={'position-absolute'} style={{width: '190px', height: '160px'
-                                , right:-10 , top:35}}>
+                            <div className={'position-absolute '+styles.logo_vertical}>
                                 <Image src={Logo} alt={"Gold Top"}
                                        fill={+true}></Image>
                             </div>

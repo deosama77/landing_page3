@@ -1,24 +1,25 @@
-.goldBotomV{
+.goldBotomV {
     display: block;
 }
 
-.goldBotomH{
+.goldBotomH {
     display: none;
 }
 
 .top_left_image_v {
     width: 120px;
     height: 120px;
-    top:-10px;
+    top: -10px;
     left: 15px;
     display: block;
 }
 
-.top_left_image_h{
+.top_left_image_h {
     display: none;
 }
-.top_left_image_container{
-     height: auto;
+
+.top_left_image_container {
+    height: auto;
 }
 
 .logo {
@@ -26,68 +27,91 @@
     height: 200px;
 }
 
-.header_top{
+.header_top {
     font-size: 1.8rem;
     font-weight: 100;
 }
-.header_middle{
+
+.header_middle {
     font-size: 3rem;
     color: #464444;
 
 
 }
-.header_bottom{
+
+.header_bottom {
     font-size: 1.8rem;
     font-weight: 100;
 }
-.right_image_v{
+
+.right_image_v {
     display: block;
 }
-.right_image_h{
+
+.right_image_h {
     display: none;
 }
+
 @media only screen and (min-width: 769px) {
-    .right_image_v{
-         display: none;
-    }
-    .right_image_h{
-        display: block;
-    }
-    .top_left_image_v{
+    .right_image_v {
         display: none;
     }
-    .top_left_image_h{
+
+    .right_image_h {
+        display: block;
+    }
+
+    .top_left_image_v {
+        display: none;
+    }
+
+    .top_left_image_h {
         display: block;
         width: 200px;
         height: 200px;
-        top:-140px;
+        top: -140px;
         right: -50px;
     }
 
-    .top_left_image_container{
+    .top_left_image_container {
         height: 0px;
     }
 
-    .header_top{
+    .header_top {
         font-size: 3rem;
         font-weight: 100;
     }
-    .header_middle{
+
+    .header_middle {
         font-size: 4rem;
         color: #464444;
     }
-    .header_bottom{
+
+    .header_bottom {
         font-size: 3rem;
         font-weight: 100;
     }
 
-    .goldBotomV{
+    .goldBotomV {
         display: none;
     }
 
-    .goldBotomH{
+    .goldBotomH {
         display: block;
     }
 
+}
+
+.logo_vertical {
+    width: 190px;
+    height: 160px;
+    right: -10px;
+    top: 35px;
+}
+
+@media (max-width: 500px) {
+    .logo_vertical {
+        right: -35px;
+    }
 }
 
