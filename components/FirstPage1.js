@@ -30,7 +30,7 @@ function FirstPage1(props) {
     return (
         <>
             <div className={'position-absolute '+styles.right_image_v}
-                 style={{width:'105%',height:"180vh" , top:'0px' ,right:0}}>
+                 style={{width:'120%',height:"180vh" , top:'0px' ,right:0}}>
                 <Image src={RightVertical} alt={'right vertical'}
                        fill={+true}
                 ></Image>
@@ -54,10 +54,10 @@ function FirstPage1(props) {
 
             </Row>
             <Row>
-                <Col xs={9} >
+                <Col xs={8} className={'p-0 m-0'}>
                     <Container fluid={+true}>
                         <Row className={'align-items-start justify-content-center'}>
-                            <Col className={'m-0 p-0 '+styles.top_left_image_container} xs={12}>
+                            <Col className={'m-0 p-0  '+styles.top_left_image_container} xs={12}>
                                 <div className={'position-relative '+styles.top_left_image_v}>
                                     <Image src={TopLeftImage_v}
                                            alt={"first picture"}
@@ -73,39 +73,41 @@ function FirstPage1(props) {
                                 </div>
                             </Col>
 
-                            <Col xs={12} className={'d-flex flex-column justify-content-center align-items-md-center'}>
-                                    <h2 className={'h1 my-2 '+styles.header_top}>马来西亚首创</h2>
-                                    <h1 className={'h1 my-2 '+styles.header_middle}>「捏骨式」</h1>
-                                    <h2 className={'h1 my-2 '+styles.header_bottom}>半永久纹绣品牌</h2>
-                            </Col>
+                            <Col xs={12} className={'p-0 mx-0 text-start d-flex flex-column justify-content-center align-items-start align-items-md-center'}>
+                                  <div className={'text-center'}>
+                                    <h2 className={'h1 my-2 text-center '+styles.header_top}>马来西亚首创</h2>
+                                    <h1 className={'h1 my-2 text-center '+styles.header_middle}>「捏骨式」</h1>
+                                    <h2 className={'h1 my-2 text-center '+styles.header_bottom}>半永久纹绣品牌</h2>
+                                  </div>
+                                  </Col>
 
                         </Row>
                         <Animate.ScaleIn>
                         <Row className={'justify-content-center'}>
 
                             <Col xs={12} md={6} lg={4} className={'py-2'}>
-                                <div className={'px-3 py-3 border rounded-3 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
+                                <div className={'px-md-3 py-md-3 py-2 px-2 border rounded-3 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
                                     <Image src={Icone2} alt={"icone 2"}
                                            width={40} height={40}
                                            className={'rounded-circle mx-2'}
                                     ></Image>
-                                    <div className={"h3 mb-0"}>自然伪妆感</div>
+                                    <div className={"h4 mb-0"}>自然伪妆感</div>
                                 </div>
                             </Col>
                             <Col xs={12} md={6} lg={4}  className={'py-2'}>
-                                <div className={'px-3 py-3 border  rounded-3 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
+                                <div className={'px-md-3 py-md-3 py-2 px-2 border  rounded-3 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
                                     <Image src={Icone3} alt={"icone 2"}
                                            width={40} height={40}
                                            className={'rounded-circle mx-2'}
-                                    ></Image> <div className={"h3 mb-0"}>科技修饰脸型</div>
+                                    ></Image> <div className={"h4 mb-0"}>科技修饰脸型</div>
                                 </div>
                             </Col>
                             <Col xs={12} md={6} lg={4}  className={'py-2'}>
-                                <div className={'px-3 py-3 border  rounded-3 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
+                                <div className={'px-md-3 py-md-3 py-2 px-2 border  rounded-3 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
                                     <Image src={Icone4} alt={"icone 2"}
                                            width={40} height={40}
                                            className={'rounded-circle mx-2'}
-                                    ></Image> <div className={"h3 mb-0"}>无疼过程</div>
+                                    ></Image> <div className={"h4 mb-0"}>无疼过程</div>
                                 </div>
                             </Col>
 
