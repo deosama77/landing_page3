@@ -54,7 +54,7 @@ function FirstPage1(props) {
 
             </Row>
             <Row>
-                <Col xs={8} className={'p-0 m-0'}>
+                <Col xs={8} className={'p-0 m-0 position-relative'} style={{left:'-10px'}}>
                     <Container fluid={+true}>
                         <Row className={'align-items-start justify-content-center'}>
                             <Col className={'m-0 p-0  '+styles.top_left_image_container} xs={12}>
@@ -75,7 +75,7 @@ function FirstPage1(props) {
 
                             <Col xs={12} className={'p-0 mx-0 text-start d-flex flex-column justify-content-center align-items-start align-items-md-center'}>
                                   <div className={'text-center'}>
-                                    <h2 className={'h1 my-2 text-center '+styles.header_top}>马来西亚首创</h2>
+                                    <h2 className={'h1 my-2  text-center '+styles.header_top}>马来西亚首创</h2>
                                     <h1 className={'h1 my-2 text-center '+styles.header_middle}>「捏骨式」</h1>
                                     <h2 className={'h1 my-2 text-center '+styles.header_bottom}>半永久纹绣品牌</h2>
                                   </div>
