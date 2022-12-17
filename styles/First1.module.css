@@ -108,7 +108,11 @@
     right: -10px;
     top: 35px;
 }
-
+@media (max-width: 400px) {
+    .logo_vertical {
+        top: 84px;
+    }
+}
 @media (max-width: 500px) {
     .logo_vertical {
         right: -35px;
