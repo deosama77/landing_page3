@@ -83,9 +83,9 @@ function FirstPage1(props) {
 
                         </Row>
                         <Animate.ScaleIn>
-                        <Row className={'justify-content-center'}>
+                        <Row className={'justify-content-around'}>
 
-                            <Col xs={12} md={6} lg={4} className={'py-2'}>
+                            <Col xs={12} md={4} lg={3} className={'py-2'}>
                                 <div className={' py-md-3 py-2 px-2 border rounded-3 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
                                     <Image src={Icone2} alt={"icone 2"}
                                            width={40} height={40}
@@ -94,7 +94,7 @@ function FirstPage1(props) {
                                     <div className={"h4 mb-0"}>自然伪妆感</div>
                                 </div>
                             </Col>
-                            <Col xs={12} md={6} lg={4}  className={'py-2'}>
+                            <Col xs={12} md={4} lg={4}  className={'py-2'}>
                                 <div className={' py-md-3 py-2 px-2 border  rounded-3 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
                                     <Image src={Icone3} alt={"icone 2"}
                                            width={40} height={40}
@@ -102,7 +102,7 @@ function FirstPage1(props) {
                                     ></Image> <div className={"h4 mb-0"}>科技修饰脸型</div>
                                 </div>
                             </Col>
-                            <Col xs={12} md={6} lg={4}  className={'py-2'}>
+                            <Col xs={12} md={4} lg={3}  className={'py-2'}>
                                 <div className={'py-md-3 py-2 px-2 border  rounded-3 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
                                     <Image src={Icone4} alt={"icone 2"}
                                            width={40} height={40}
@@ -136,7 +136,7 @@ function FirstPage1(props) {
                         <Image src={GoldBottomH} alt={"Gold bottom horizontal"}
                                fill={+true}></Image>
                         <div className={'position-absolute'}
-                             style={{width: '280px', height: '220px'
+                             style={{width: '320px', height: '280px'
                             , right:-10 , top:35}}>
                             <Image src={Logo} alt={"Gold Top"}
                                    fill={+true}></Image>
