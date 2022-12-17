@@ -19,7 +19,7 @@ import Icone3 from "../public/images/page_1/icons_1_03_new.png";
 import Icone4 from "../public/images/page_1/icons_1_04_new.png";
 
 import RightVertical from '../public/images/page_1/right_v.png';
-import HImage from '../public/images/page_1/horizontal_01.png'
+import RightHorizontal from '../public/images/page_1/horizontal_01.png'
 
 import {Animate, useElementOnScreen} from "../hooks/useElementOnScreen";
 
@@ -38,7 +38,7 @@ function FirstPage1(props) {
 
             <div className={'position-absolute '+styles.right_image_h}
                  style={{width:'50%',height:"120vh" , top:'0px' ,right:0}}>
-                <Image src={HImage} alt={'right horizontal'}
+                <Image src={RightHorizontal} alt={'right horizontal'}
                        fill={+true}
                 ></Image>
             </div>
@@ -86,7 +86,7 @@ function FirstPage1(props) {
                         <Row className={'justify-content-center'}>
 
                             <Col xs={12} md={6} lg={4} className={'py-2'}>
-                                <div className={'px-md-3 py-md-3 py-2 px-2 border rounded-3 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
+                                <div className={' py-md-3 py-2 px-2 border rounded-3 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
                                     <Image src={Icone2} alt={"icone 2"}
                                            width={40} height={40}
                                            className={'rounded-circle mx-2'}
@@ -95,7 +95,7 @@ function FirstPage1(props) {
                                 </div>
                             </Col>
                             <Col xs={12} md={6} lg={4}  className={'py-2'}>
-                                <div className={'px-md-3 py-md-3 py-2 px-2 border  rounded-3 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
+                                <div className={' py-md-3 py-2 px-2 border  rounded-3 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
                                     <Image src={Icone3} alt={"icone 2"}
                                            width={40} height={40}
                                            className={'rounded-circle mx-2'}
@@ -103,7 +103,7 @@ function FirstPage1(props) {
                                 </div>
                             </Col>
                             <Col xs={12} md={6} lg={4}  className={'py-2'}>
-                                <div className={'px-md-3 py-md-3 py-2 px-2 border  rounded-3 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
+                                <div className={'py-md-3 py-2 px-2 border  rounded-3 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
                                     <Image src={Icone4} alt={"icone 2"}
                                            width={40} height={40}
                                            className={'rounded-circle mx-2'}
