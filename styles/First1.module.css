@@ -1,5 +1,6 @@
 .goldBotomV {
     display: block;
+    top:-100px;
 }
 
 .goldBotomH {
@@ -7,8 +8,8 @@
 }
 
 .top_left_image_v {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     top: -10px;
     left: 15px;
     display: block;
@@ -28,19 +29,19 @@
 }
 
 .header_top {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 100;
 }
 
 .header_middle {
-    font-size: 2.7rem;
+    font-size: 2.9rem;
     color: #464444;
 
 
 }
 
 .header_bottom {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 100;
 }
 
@@ -52,7 +53,27 @@
     display: none;
 }
 
+.bottom_gold_container{
+    height: 0px;
+}
+
+.logo_horizontal{
+    width: 332px;
+    height: 283px;
+    right: -10px;
+    top: 118px;
+}
+.text_second{
+    font-size: 1.4rem;
+}
+
 @media only screen and (min-width: 769px) {
+    .text_second{
+        font-size: 21pt;
+    }
+    .bottom_gold_container{
+        height: auto;
+    }
     .right_image_v {
         display: none;
     }
@@ -67,10 +88,11 @@
 
     .top_left_image_h {
         display: block;
-        width: 200px;
-        height: 200px;
-        top: -140px;
-        right: -50px;
+        display: block;
+        width: 234px;
+        height: 219px;
+        top: -210px;
+        right: -70px;
     }
 
     .top_left_image_container {
@@ -78,17 +100,17 @@
     }
 
     .header_top {
-        font-size: 3rem;
+        font-size: 31pt;
         font-weight: 100;
     }
 
     .header_middle {
-        font-size: 4rem;
+        font-size: 77pt;
         color: #464444;
     }
 
     .header_bottom {
-        font-size: 3rem;
+        font-size: 31pt;
         font-weight: 100;
     }
 
@@ -103,19 +125,55 @@
 }
 
 .logo_vertical {
-    width: 190px;
-    height: 160px;
-    right: -10px;
-    top: 35px;
+    width: 167px;
+    height: 128px;
+    top: 88px;
+    right: 7px;
 }
-@media (max-width: 400px) {
-    .logo_vertical {
-        top: 84px;
+
+@media (max-width: 600px) {
+    .header_top {
+        font-size: 1.4rem;
+    }
+
+    .header_middle {
+        font-size: 2.6rem;
+
+    }
+
+    .header_bottom {
+        font-size: 1.4rem;
+
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 500px) and (min-width: 351px){
     .logo_vertical {
-        right: -35px;
+        top: 108px;
+        right: 0px;
     }
 }
+@media (max-width: 350px) {
+    .logo_vertical {
+        top: 132px;
+        right: 0px;
+    }
+    .header_top {
+        font-size: 1.3rem;
+    }
+
+    .header_middle {
+        font-size: 2.4rem;
+
+    }
+
+    .header_bottom {
+        font-size: 1.3rem;
+
+    }
+}
+
+
+
+
+
 

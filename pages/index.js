@@ -11,7 +11,7 @@ import EighthPage from "../components/EighthPage";
 import FooterPge from "../components/FooterPge";
 import {Animate, useElementOnScreen} from "../hooks/useElementOnScreen";
 import {useRef} from 'react'
-import FirstPage1 from "../components/FirstPage1";
+import FirstPage from "../components/FirstPage";
 import SeconPage1 from "../components/SeconPage1";
 import ThirdPage1 from "../components/ThirdPage1";
 import SixthPage1 from "../components/SixthPage1";
@@ -35,7 +35,7 @@ export default function Home() {
          <Suspense fallback={<LoadingPage></LoadingPage>}>
              <Animate.FadeUp>
              <div className={styles.container} style={{minHeight:'100vh'}}>
-                 <FirstPage1></FirstPage1>
+                 <FirstPage></FirstPage>
              </div>
              </Animate.FadeUp>
 

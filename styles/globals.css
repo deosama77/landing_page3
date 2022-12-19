@@ -13,8 +13,15 @@ body {
   margin: 0;
   color: #696565;
   font:inherit;
-  font-family: fontWebCh_Zi;
+  font-family: fontWebCh_Dengb;
 
+}
+.header_font{
+  font-family: fontWebCh_Zi;
+}
+
+text_font{
+  font-family: fontWebCh_Dengb;
 }
 
 a {
