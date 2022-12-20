@@ -18,31 +18,31 @@ function SeconPage1(props) {
         <>
             <Col xs={12} className={styles.card_sense +' border border-3 border-warning rounded-5 p-1 pt-3'} >
                 <div>
-                    <h1 className={'pt-m-2 text-center w-100 '+styles.sense_em}>SENSE EMBROIDERY</h1>
+                    <h1 className={'pt-m-2 text-center w-100 header_font '+styles.sense_em}>SENSE EMBROIDERY</h1>
                     <div className={'d-flex align-items-center flex-row justify-content-md-start w-100'}>
-                        <Image src={Icon1} alt={"icon 1"} width={140}
+                        <Image src={Icon1} alt={"icon 1"} width={100}
+                               height={100}></Image>
+                        <div className={'px-1 d-flex flex-column justify-content-center align-items-center'}>
+                            <h3 className={'p-0 m-0 '+styles.second_text}>亚洲半永久美容</h3>
+                            <h3 className={'p-0 m-0 '+styles.second_text}>大赛裁判长创办</h3>
+                        </div>
+
+                    </div>
+
+                    <div className={'d-flex align-items-center flex-row justify-content-md-start w-100'}>
+                        <Image src={Icon2} alt={"icon 1"} width={100}
+                               height={100}></Image>
+                        <div className={'px-1 d-flex flex-column justify-content-center align-items-center'}>
+                            <h3 className={'p-0 m-0 '+styles.second_text}>融合国际先进技术</h3>
+                        </div>
+
+                    </div>
+
+                    <div className={'d-flex align-items-center flex-row justify-content-md-start w-100'}>
+                        <Image src={Icon3} alt={"icon 1"} width={100}
                                height={100}></Image>
                         <div className={'d-flex flex-column justify-content-center align-items-center'}>
-                            <h3 className={'p-0 m-0'}>亚洲半永久美容</h3>
-                            <h3 className={'p-0 m-0'}>大赛裁判长创办</h3>
-                        </div>
-
-                    </div>
-
-                    <div className={'d-flex align-items-center flex-row justify-content-md-start w-100'}>
-                        <Image src={Icon2} alt={"icon 1"} width={140}
-                               height={110}></Image>
-                        <div className={'d-flex flex-column justify-content-center align-items-center'}>
-                            <h3 className={'p-0 m-0'}>融合国际先进技术</h3>
-                        </div>
-
-                    </div>
-
-                    <div className={'d-flex align-items-center flex-row justify-content-md-start w-100'}>
-                        <Image src={Icon3} alt={"icon 1"} width={140}
-                               height={110}></Image>
-                        <div className={'d-flex flex-column justify-content-center align-items-center'}>
-                            <h3 className={'p-0 m-0'}>服务超过100000位客户</h3>
+                            <h3 className={'px-1 p-0 m-0 '+styles.second_text}>服务超过100000位客户</h3>
                         </div>
 
                     </div>

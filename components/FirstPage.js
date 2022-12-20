@@ -46,8 +46,13 @@ function FirstPage(props) {
         <Container fluid={+true}>
             <Row>
                 <Col xs={8} className={'m-0 p-0'}>
-                    <div className={'position-relative'} style={{width: '90%', height: '25vh'}}>
+                    <div className={'position-relative '+styles.gold_top_vertical} style={{width: '90%', height: '25vh'}}>
                         <Image src={GoldTopV} alt={"Gold Top"}
+                               fill={+true}></Image>
+                    </div>
+
+                    <div className={'position-relative '+styles.gold_top_horizontal} style={{width: '90%', height: '30vh'}}>
+                        <Image src={GoldTopH} alt={"Gold Top"}
                                fill={+true}></Image>
                     </div>
                 </Col>
@@ -75,15 +80,15 @@ function FirstPage(props) {
 
                             <Col xs={12} className={'p-0 mx-0 text-start d-flex flex-column justify-content-center align-items-start align-items-lg-center'}>
                                   <div className={'text-center text-md-start'}>
-                                    <div className={'h2 my-2  text-center  px-md-2 '+styles.header_top}>马来西亚首创</div>
-                                    <div className={'h1 my-2 text-center  px-md-2 '+styles.header_middle}>「捏骨式」</div>
-                                    <div className={'h2 my-2 text-center  px-md-2 '+styles.header_bottom}>半永久纹绣品牌</div>
+                                    <div className={'h2 my-2  text-center text_font  px-md-1 '+styles.header_top}>马来西亚首创</div>
+                                    <div className={'h1 my-2 text-center header_font  px-md-1 '+styles.header_middle}>「捏骨式」</div>
+                                    <div className={'h2 my-2 text-center text_font  px-md-1 '+styles.header_bottom}>半永久纹绣品牌</div>
                                   </div>
                                   </Col>
 
                         </Row>
                         <Animate.ScaleIn>
-                        <Row className={'flex-column flex-lg-row justify-content-md-center'}>
+                        <Row className={'px-md-1 px-lg-4 flex-column flex-lg-row justify-content-md-center'}>
                             <Col  className={'py-2 px-md-5 px-lg-0'}>
                                 <div className={' py-md-3 py-1 px-1  border rounded-3 d-inline-flex align-items-center'} style={{backgroundColor:'#f9f0f0'}}>
                                     <Image src={Icone2} alt={"icone 2"}

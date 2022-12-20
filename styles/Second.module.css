@@ -18,7 +18,82 @@
     background-size: 100% 100%;
     background-position: right top;
 }
+.sense_em{
+    font-size: 20pt;
+    font-weight: normal;
+    letter-spacing: normal;
+    /*font-family: "Times New Roman", Times, serif;*/
+}
+.second_text{
+    font-size: 1.4rem;
+}
+.card_sense{
+    background-color: rgb(255,255,255,.7);
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+}
+.card_sense h4{
+    color: #4b4545;
+}
+
+.left_image{
+    width: 50%;
+    height: 81vh;
+}
+.right_image{
+    width: 50%;
+    height: 81vh;
+}
+
+
+/*media */
+@media only screen and (min-width: 771px){
+    .card_sense{
+        width: 40%;
+    }
+    .top_image{
+        display: none;
+    }
+    .bottom_image{
+        display: none;
+    }
+    .sense_em{
+        font-size: 27pt;
+    }
+    .second_text{
+        font-size: 19pt;
+    }
+}
+@media only screen and (max-width:  770px) {
+    .left_image{
+        display: none;
+    }
+    .right_image{
+        display: none;
+    }
+    .second_text{
+        font-size: 1.4rem;
+    }
+}
+@media (min-width: 601px) and (max-width:770px ) {
+    .sense_em{
+        font-size: 27pt;
+    }
+    .card_sense{
+        width: 60%;
+    }
+}
 @media only screen and (max-width: 600px) {
+    .card_sense{
+        width: 90%;
+    }
+    .second_text{
+        font-size: 1.3rem;
+    }
     .right_image_background{
         position: absolute;
         height: 50vh;
@@ -37,64 +112,15 @@
     }
 
 }
-.card_sense{
-    background-color: rgb(255,255,255,.7);
-    z-index: 10;
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    width: 40%;
-}
-.card_sense h4{
-    color: #4b4545;
-}
 
-.sense_em{
-    font-weight: normal;
-    letter-spacing: normal;
-    font-family: "Times New Roman", Times, serif;
-}
-
-@media only screen and (max-width:600px ) {
-    .card_sense{
-        width: 90%;
+@media (max-width: 500px) {
+    .second_text{
+        font-size: 1.2rem;
     }
 }
-
-@media only screen and (max-width:770px ) and (min-width: 601px){
-    .card_sense{
-        width: 60%;
-    }
-}
-@media only screen and (min-width: 771px){
-    .card_sense{
-        width: 40%;
-    }
-    .top_image{
-        display: none;
-    }
-    .bottom_image{
-        display: none;
-    }
-}
-
-.left_image{
-    width: 50%;
-    height: 100vh;
-}
-.right_image{
-    width: 50%;
-    height: 100vh;
-}
-
-
-@media only screen and (max-width:  770px) {
-    .left_image{
-        display: none;
-    }
-    .right_image{
-        display: none;
+@media (max-width: 361px) {
+    .second_text{
+        font-size: 1.1rem;
     }
 }
 

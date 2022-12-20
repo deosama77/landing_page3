@@ -1,3 +1,10 @@
+.gold_top_horizontal{
+    display: none;
+}
+.gold_top_vertical{
+    display: block;
+}
+
 .goldBotomV {
     display: block;
     top:-100px;
@@ -54,20 +61,43 @@
 }
 
 .bottom_gold_container{
-    height: 0px;
+    height: 129px;
 }
 
 .logo_horizontal{
     width: 332px;
     height: 283px;
-    right: -10px;
-    top: 40px;
+    right: -22px;
+    top: 99px;
 }
 .text_second{
     font-size: 1.4rem;
 }
 
+.logo_vertical {
+    width: 167px;
+    height: 128px;
+    top: 88px;
+    right: 7px;
+}
+
+
+/* media */
+@media (min-width: 1000px) {
+    .logo_horizontal{
+        width: 332px;
+        height: 283px;
+        right: 0px;
+        top: 65px;
+    }
+}
 @media only screen and (min-width: 769px) {
+    .gold_top_horizontal{
+        display: block;
+    }
+    .gold_top_vertical{
+        display: none;
+    }
     .text_second{
         font-size: 21pt;
     }
@@ -91,7 +121,7 @@
         display: block;
         width: 234px;
         height: 219px;
-        top: -210px;
+        top: -199px;
         right: -70px;
     }
 
@@ -124,14 +154,10 @@
 
 }
 
-.logo_vertical {
-    width: 167px;
-    height: 128px;
-    top: 88px;
-    right: 7px;
-}
-
 @media (max-width: 600px) {
+    .text_second{
+        font-size: 1.3rem;
+    }
     .header_top {
         font-size: 1.4rem;
     }
@@ -146,28 +172,50 @@
 
     }
 }
-@media (max-width: 500px) and (min-width: 351px){
+
+@media (min-width: 351px) and (max-width: 500px)  {
     .logo_vertical {
         top: 108px;
         right: 0px;
     }
 }
-@media (max-width: 350px) {
-    .logo_vertical {
-        top: 132px;
-        right: 0px;
+@media (min-width: 351px) and (max-width: 400px) {
+    .text_second{
+        font-size: 1.1rem;
     }
     .header_top {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .header_middle {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
 
     }
 
     .header_bottom {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+
+    }
+}
+
+@media (max-width: 350px) {
+    .logo_vertical {
+        top: 135px;
+    }
+    .text_second{
+        font-size: 1rem;
+    }
+    .header_top {
+        font-size: 1rem;
+    }
+
+    .header_middle {
+        font-size: 2.1rem;
+
+    }
+
+    .header_bottom {
+        font-size: 1rem;
 
     }
 }
