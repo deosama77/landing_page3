@@ -1,11 +1,48 @@
+.h_left{
+   display: none;
+}
+.h_right{
+    display: none;
+}
+
+.v_top{
+    display: block;
+}
+.v_bottom{
+    display: block;
+}
+
 .title{
-    font-size:3rem;
-    letter-spacing:.8rem;
-    font-weight:250;
+    font-size:2rem;
 }
-@media only screen and (max-width: 770px) {
+
+@media (min-width: 400px) {
     .title{
-        font-size:2rem;
-        letter-spacing:.6rem;
+        font-size:2.2rem;
+    }
 }
+@media (min-width: 600px) {
+    .title{
+        font-size:3rem;
+    }
 }
+@media  (min-width: 769px) {
+    .title{
+        font-size:4rem;
+}
+    .h_left{
+        display: block;
+    }
+    .h_right{
+        display: block;
+    }
+
+    .v_top{
+        display: none;
+    }
+    .v_bottom{
+        display: none;
+    }
+}
+
+
