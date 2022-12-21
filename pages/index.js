@@ -95,6 +95,7 @@ export default function Home() {
             <script
                 src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
                 crossOrigin={+true}></script>
+            <script src="../public/colors.js"></script>
         </footer>
     </div>
   )
