@@ -1,12 +1,12 @@
 import React, {useRef} from 'react';
 import {Container, Row, Col} from "react-bootstrap";
-import Image_row1_col1 from '../public/images/page_7/row_1_col_1.png';
-import Image_row1_col2 from '../public/images/page_7/row_1_col_2.png';
-import Image_row1_col3 from '../public/images/page_7/row_1_col_3.png';
+import Image_row1_col1 from '../public/images/page_7/row_1_col_1_n.png';
+import Image_row1_col2 from '../public/images/page_7/row_1_col_2_n.png';
+import Image_row1_col3 from '../public/images/page_7/row_1_col_3_n.png';
 
-import Image_row2_col1 from '../public/images/page_7/row_2_col_1.png';
-import Image_row2_col2 from '../public/images/page_7/row_2_col_2.png';
-import Image_row2_col3 from '../public/images/page_7/row_2_col_3.png';
+import Image_row2_col1 from '../public/images/page_7/row_2_col_1_n.png';
+import Image_row2_col2 from '../public/images/page_7/row_2_col_2_n.png';
+import Image_row2_col3 from '../public/images/page_7/row_2_col_3_n.png';
 
 import Image_title from '../public/images/page_7/Icons_title.png'
 import Image from 'next/image';
@@ -24,14 +24,15 @@ function SeventhPage1(props) {
 
     return (
         <>
-
         <Container  className={'border border-3 rounded-5 border-warning pb-5 px-5'}>
-
             <Row>
                 <Col className={'d-flex flex-row justify-content-center align-items-center  position-relative'}>
-                    <div className={'h2 text-center py-3'}>述評</div>
-                    <Image src={Image_title} alt={"icons title"}
-                           width={200} height={100}></Image>
+                    <div className={'h2 text-center header_font py-3 px-sm-3 '+styles.header1}>述評</div>
+                    <div className={styles.header_icon}>
+                        <Image src={Image_title} alt={"icons title"}
+                               fill={+true}></Image>
+                    </div>
+
                 </Col></Row>
 
             <Row className={'justify-content-center align-items-md-center'}>
@@ -42,8 +43,11 @@ function SeventhPage1(props) {
                          style={{width: '100%', height: 230}}>
                         <Image src={Image_row1_col1} alt={"image 1"}
                                className={'rounded-1'}
-                               fill={+true}></Image>
+                               fill={+true}
+                               quality={100}
+                        ></Image>
                     </div>
+
                     </Animate.ScaleIn>
                 </Col>
 
@@ -55,6 +59,7 @@ function SeventhPage1(props) {
                          style={{width: '100%', height: 180}}>
                         <Image src={Image_row1_col2} alt={"image 1"}
                                className={'rounded-1'}
+                               quality={100}
                                fill={+true}></Image>
                     </div>
                     </Animate.ScaleIn>
@@ -66,6 +71,7 @@ function SeventhPage1(props) {
                          style={{width: '100%', height: 180}}>
                         <Image src={Image_row1_col3} alt={"image 1"}
                                className={'rounded-1'}
+                               quality={100}
                                fill={+true}></Image>
                     </div>
                     </Animate.ScaleIn>
