@@ -19,19 +19,22 @@ function EighthPage(props) {
                 <Col xs={12} md={6} className={'py-3'}>
                    <Row className={'container pt-md-4'}>
                        <Col>
-                           <div className={'h1  text-start '+styles.snese_header}>Sense Embroidery</div>
-                           <div className={'h1  text-start '+styles.header_ch}>半永久定妆术</div>
-                           <div className={'h4  text-start py-4'}>带你刷新审美认知行走在美学的最前沿。</div>
+                           <div className={'h1  text-start header_font '+styles.snese_header}>Sense Embroidery</div>
+                           <div className={'h1  text-start header_font '+styles.header_ch}>半永久定妆术</div>
+                           <div className={'h4  text-start py-4 '+styles.header_det}>带你刷新审美认知行走在美学的最前沿。</div>
                            <div className={'pb-4'}>
-                               <div className={'h4 text-start'}>在未来的5年内与我们的纹绣师团队</div>
-                               <div className={'h4 text-start '}>能在不同的地区开分行，</div>
-                               <div className={'h4 text-start'}>让更多马来西亚女性得到她们该有的魅力&气质。</div>
+                               <div className={'h4 text-start '+styles.header_det}>在未来的5年内与我们的纹绣师团队</div>
+                               <div className={'h4 text-start '+styles.header_det}>能在不同的地区开分行，</div>
+                               <div className={'h4 text-start '+styles.header_det}>让更多马来西亚女性得到她们该有的魅力&气质。</div>
                            </div>
 
-                           <div className={'h4  text-start pb-4'}>Beautiful is confidence,<br/>
+                           <div className={'h4  text-start header_font '+styles.footer_text}>Beautiful is confidence,
+                               </div>
+                           <div className={'h4  text-start header_font pb-4 '+styles.footer_text}>
                                and confidence is even more beautiful.</div>
                        </Col>
                    </Row>
+
                     <Row className={'pt-2 justify-content-center'}>
                         <div className={'text-center'}>
                             <Image className={'fa-fade'}

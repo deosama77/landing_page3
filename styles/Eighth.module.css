@@ -1,11 +1,138 @@
 .snese_header{
-    font-size: 3rem;
-    letter-spacing: .3rem;
+    font-size: 57pt;
     color: #a28037;
-
 }
 .header_ch{
-    font-size: 1.8rem;
-    letter-spacing: .3rem;
+    font-size: 31pt;
     color: #a28037;
+}
+.header_det{
+    font-size:17pt ;
+}
+
+.footer_text{
+    font-size: 19pt;
+}
+@media (min-width: 1200px) {
+    .snese_header{
+        font-size: 60pt;
+    }
+    .header_ch{
+        font-size: 34pt;
+        color: #a28037;
+    }
+    .header_det{
+        font-size:20pt ;
+    }
+
+    .footer_text{
+        font-size: 22pt;
+    }
+
+}
+@media (min-width: 350px) and (max-width: 380px) {
+    .snese_header{
+        font-size: 27pt;
+    }
+    .header_ch{
+        font-size: 19pt;
+    }
+    .header_det{
+        font-size:11pt ;
+    }
+    .footer_text{
+        font-size: 13pt;
+    }
+}
+
+@media (min-width: 381px) and (max-width: 400px) {
+    .snese_header{
+        font-size: 31pt;
+    }
+    .header_ch{
+        font-size: 20pt;
+    }
+    .header_det{
+        font-size:12pt ;
+    }
+    .footer_text{
+        font-size: 14pt;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 450px) {
+    .snese_header{
+        font-size: 33pt;
+    }
+    .header_ch{
+        font-size: 21pt;
+    }
+    .header_det{
+        font-size:13pt ;
+    }
+    .footer_text{
+        font-size: 15pt;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 500px) {
+    .snese_header{
+        font-size: 38pt;
+    }
+    .header_ch{
+        font-size: 23pt;
+    }
+    .header_det{
+        font-size:15pt ;
+    }
+    .footer_text{
+        font-size: 17pt;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 769px){
+    .snese_header{
+        font-size: 43pt;
+    }
+    .header_ch{
+        font-size: 26pt;
+    }
+}
+@media (min-width: 769px) and (max-width: 990px) {
+    .snese_header{
+        font-size: 31pt;
+    }
+    .header_ch{
+        font-size: 20pt;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+    .snese_header{
+        font-size: 43pt;
+    }
+    .header_ch{
+        font-size: 26pt;
+    }
+}
+
+@media (min-width: 1200px)  {
+    .snese_header{
+        font-size: 53pt;
+    }
+    .header_ch{
+        font-size: 29pt;
+    }
+}
+
+@media (max-width: 350px) {
+    .snese_header{
+        font-size: 24pt;
+    }
+    .header_ch{
+        font-size: 17pt;
+    }
+    .header_det{
+        font-size:9pt ;
+    }
 }

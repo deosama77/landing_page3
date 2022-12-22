@@ -12,8 +12,8 @@ import Image_title from '../public/images/page_7/Icons_title.png'
 import Image from 'next/image';
 import styles from '../styles/Seventh1.module.css';
 
-import LikeIcon from '../public/images/page_7/Like_1.png'
-import LovIcon1 from '../public/images/page_7/Icons_love.png';
+import LikeIcon from '../public/images/page_7/Like_1_n.png'
+import LovIcon1 from '../public/images/page_7/Icons_love_n.png';
 import {Animate, useElementOnScreen} from "../hooks/useElementOnScreen";
 import ClickIcon from '../public/images/click_01_cut.png';
 
@@ -80,7 +80,7 @@ function SeventhPage1(props) {
             </Row>
 
             <Row style={{height:0}}>
-                    <div className={'position-relative '+styles.like_1} style={{width:140,height:140}}
+                    <div className={'position-relative '+styles.like_1}
                     >
                         <Image src={LikeIcon} alt={"like icon"}
                                fill={+true}
@@ -90,8 +90,7 @@ function SeventhPage1(props) {
 
                     <div className={'position-relative '+styles.love_1}>
                         <Image src={LovIcon1} alt={"like icon"}
-                               width={140} height={140}
-
+                               fill={+true}
                         ></Image>
                     </div>
                 <div className={'position-relative '+styles.love_2}>
@@ -139,8 +138,8 @@ function SeventhPage1(props) {
                     </Animate.ScaleIn>
                 </Col>
             </Row>
-            <Row className={'justify-content-end justify-content-sm-center pt-3  '+styles.click_icon_row}>
-                <Col xs={6} sm={4}>
+            <Row className={'justify-content-center pt-3  '+styles.click_icon_row}>
+
 
                     <div className={"position-relative fa-fade  "+styles.click_icon}>
                         <Image
@@ -148,8 +147,6 @@ function SeventhPage1(props) {
                                src={ClickIcon} alt={"click icon"}
                                fill={+true}></Image>
                     </div>
-
-                </Col>
             </Row>
         </Container>
             </>
