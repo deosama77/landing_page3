@@ -1,7 +1,7 @@
 .ex_up_vertical{
     background-color: #f9f0f0;
-    font-size: 1.3rem;
-    top: 251px;
+    font-size: 1.1rem;
+    top: 185px;
     right: 5%;
     z-index: 2;
     display: block;
@@ -9,8 +9,8 @@
 }
 .ex_down_vertical{
     background-color: #f9f0f0;
-    font-size: 1.3rem;
-    bottom: 133px;
+    font-size: 1.1rem;
+    bottom: 155px;
     right: 5%;
     z-index: 2;
     display: block;
@@ -67,12 +67,13 @@
 }
 .image_v{
     display: block;
+    padding-top: 30px;
 }
 
 .click_icon_vertical{
-    width:240px;
-    height:120px;
-    bottom: 10px;
+    width: 222px;
+    height: 108px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;

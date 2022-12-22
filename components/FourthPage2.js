@@ -32,7 +32,7 @@ function FourthPage2(props) {
             </div>
 
 
-            <div style={{height: '100vh'}} className={styles.image_v}>
+            <div style={{minHeight: '120vh'}} className={styles.image_v}>
                 <div className={'py-3  w-100 text-center '+styles.text_title_vertical}>
                     <div className={'h1 text-center header_font  ' + styles.title1_vertical}
                     >独有鼻影技术</div>
@@ -47,7 +47,8 @@ function FourthPage2(props) {
                 </div>
                 <div className={'position-absolute '} style={{width: '100%', height: '100%'}}>
                     <Image src={ImageVertical} alt={"image vertical "}
-                           style={{top:20}}
+
+                           style={{ overflow:"hidden"}}
                            fill={+true}></Image>
                 </div>
                 <div className={'position-absolute '+styles.click_icon_vertical}>
