@@ -10,8 +10,8 @@ import GoldTopH from '../public/images/page_1/gold_top_h.png';
 import styles from "../styles/First1.module.css";
 import Logo from "../public/images/page_1/Sense_Logo.png";
 
-import TopLeftImage_v from "../public/images/page_1/top_left_cut.png";
-import TopLeftImage_h from '../public/images/page_1/top_left_h.png'
+import TopLeftImage_v from "../public/images/page_1/top_left_image_new.png";
+import TopLeftImage_h from '../public/images/page_1/top_left_image_new.png'
 
 
 import Icone2 from "../public/images/page_1/icons_2_new_c.png";
@@ -29,15 +29,13 @@ function FirstPage(props) {
 
     return (
         <>
-            <div className={'position-absolute '+styles.right_image_v}
-                 style={{width:'68%',height:"70vh" , top:'0px' ,right:0}}>
+            <div className={'position-absolute '+styles.right_image_v}>
                 <Image src={RightVertical} alt={'right vertical'}
                        fill={+true}
                 ></Image>
             </div>
 
-            <div className={'position-absolute '+styles.right_image_h}
-                 style={{width:'50%',height:"120vh" , top:'0px' ,right:0}}>
+            <div className={'position-absolute '+styles.right_image_h}>
                 <Image src={RightHorizontal} alt={'right horizontal'}
                        fill={+true}
                 ></Image>
@@ -51,7 +49,7 @@ function FirstPage(props) {
                                fill={+true}></Image>
                     </div>
 
-                    <div className={'position-relative '+styles.gold_top_horizontal} style={{width: '90%', height: '30vh'}}>
+                    <div className={'position-relative '+styles.gold_top_horizontal} style={{width: '90%', height: '40vh'}}>
                         <Image src={GoldTopH} alt={"Gold Top"}
                                fill={+true}></Image>
                     </div>
@@ -79,7 +77,7 @@ function FirstPage(props) {
                             </Col>
 
                             <Col xs={12} className={'p-0 mx-0 text-start d-flex flex-column justify-content-center align-items-start align-items-lg-center'}>
-                                  <div className={'text-center text-md-start'}>
+                                  <div className={'text-center text-md-start py-md-4'}>
                                     <div className={'h2 my-2  text-center text_font  px-md-1 '+styles.header_top}>马来西亚首创</div>
                                     <div className={'h1 my-2 text-center header_font  px-md-1 '+styles.header_middle}>「捏骨式」</div>
                                     <div className={'h2 my-2 text-center text_font  px-md-1 '+styles.header_bottom}>半永久纹绣品牌</div>
@@ -125,12 +123,12 @@ function FirstPage(props) {
 
             <Row className={'align-items-end '+styles.bottom_gold_container}>
                 <Col xs={12} className={'m-0 p-0'}>
-                        <div className={'position-relative '+styles.goldBotomV} style={{width: '100%', height: '33vh'}}
-                             >
+                        <div className={'position-relative '+styles.goldBotomV}
+                             style={{width: '100%', height: '350px'}}>
                             <Image src={GoldBottomV} alt={"Gold Top"}
                                    fill={+true}></Image>
                             <div className={'position-absolute '+styles.logo_vertical}>
-                                <Image src={Logo} alt={"Gold Top"}
+                                <Image src={Logo} alt={"Gold Bottom"}
                                        fill={+true}></Image>
                             </div>
                         </div>

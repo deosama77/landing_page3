@@ -17,6 +17,7 @@ import ThirdPage1 from "../components/ThirdPage1";
 import SixthPage1 from "../components/SixthPage1";
 
 import SeventhPage1 from "../components/SeventhPage1";
+import FirstPage1 from "../components/FirstPage1";
 
 
 export default function Home() {
@@ -35,7 +36,7 @@ export default function Home() {
          <Suspense fallback={<LoadingPage></LoadingPage>}>
              <Animate.FadeUp>
              <div className={styles.container} style={{minHeight:'100vh'}}>
-                 <FirstPage></FirstPage>
+                 <FirstPage1></FirstPage1>
              </div>
              </Animate.FadeUp>
 

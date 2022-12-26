@@ -1,27 +1,45 @@
 .h_left{
    display: none;
+    width: 380px;
+    height: 340px;
 }
 .h_right{
     display: none;
+    width: 380px;
+    height: 340px;
 }
 
 .v_top{
     display: block;
+    width: 340px;
+    height: 300px;
 }
 .v_bottom{
     display: block;
+    width: 340px;
+    height: 300px;
 }
 
 .title{
     font-size:2rem;
 }
 
-@media (min-width: 400px) {
+@media (max-width: 400px) {
+    .v_top{
+        width: 300px;
+        height: 250px;
+    }
+    .v_bottom{
+        width: 300px;
+        height: 250px;
+    }
+}
+@media (min-width: 401px) and (max-width: 599px) {
     .title{
         font-size:2.2rem;
     }
 }
-@media (min-width: 600px) {
+@media (min-width: 600px) and (max-width: 768px) {
     .title{
         font-size:3rem;
     }
