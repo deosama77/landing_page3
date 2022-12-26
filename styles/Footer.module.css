@@ -6,14 +6,27 @@
     font-size: 19pt;
 }
 .text_icon{
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
+}
+.text_icon_1{
+    width: 80px;
+    height: 80px;
 }
 
 @media (max-width: 769px) {
     .text1{
         font-size: 18pt;
     }
+    .text_icon{
+        width: 55px;
+        height: 55px;
+    }
+    .text_icon_1{
+        width: 60px;
+        height: 60px;
+    }
+
 }
 
 @media (max-width: 600px) {

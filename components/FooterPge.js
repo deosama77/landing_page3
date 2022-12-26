@@ -31,7 +31,7 @@ function FooterPge(props) {
                     <Container>
                         <Row className={'py-md-3 py-2 justify-content-center'}>
                             <Col xs={6} sm={4} lg={3} className={'py-md-2 d-flex flex-column align-items-center'}>
-                                <div className={'position-relative p-1 '+styles.text_icon}>
+                                <div className={'position-relative p-1 '+styles.text_icon_1}>
                                     <Image src={Icons_13} alt={"imge 13"}
                                           fill={+true}></Image>
                                 </div>
@@ -62,7 +62,7 @@ function FooterPge(props) {
                             <Col xs={6} sm={4} lg={3}  className={'py-md-2 d-flex flex-column align-items-center'}>
                                 <div className={'position-relative p-1 '+styles.text_icon}>
                                 <Image src={Icons_16} alt={"imge 13"}
-                                       width={50} height={50}></Image>
+                                       fill={+true}></Image>
                                 </div>
                                 <div className={'text-center py-2'}>
                                 <div className={'h4 '+styles.text1}>一遍上色、<br/>百分百留色</div>

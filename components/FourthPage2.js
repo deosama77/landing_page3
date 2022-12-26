@@ -45,9 +45,8 @@ function FourthPage2(props) {
                     <div>体现鼻影效果</div>
                     <div>增加立体感</div>
                 </div>
-                <div className={'position-absolute '} style={{width: '100%', height: '100%'}}>
+                <div className={'position-absolute '+styles.image_v_c}>
                     <Image src={ImageVertical} alt={"image vertical "}
-
                            style={{ overflow:"hidden"}}
                            fill={+true}></Image>
                 </div>
